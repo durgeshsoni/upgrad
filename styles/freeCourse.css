@@ -71,6 +71,7 @@
 
 #innerNav {
     border: 1px solid black;
+    margin-bottom: 24px;
 }
 #innerNav ul {
     display: flex;
@@ -81,4 +82,55 @@
     color: #808080;
     font-size: 14px;
     font-weight: bold;
+}
+.topic_module ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.topic_module ul li {
+    list-style: none;
+    height: 96px;
+    /* background-color: yellow; */
+    border: 1px solid black;
+}
+.topic_module_1 {
+    padding: 24px;
+}
+.topic_module_2 {
+    /* background-color: red; */
+    height: 50px;
+    display: flex;
+}
+.topic_module_2_back {
+    background-image: url('https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites/prod/in/free-courses/1648035227802/sprite-in/free-courses.png');
+    height: 44px;
+    width: 40px;
+    background-size: cover;
+    margin-right: 24px;
+}
+.topic_module_2_para {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.p1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4A4A4A;
+}
+.p2 {
+    font-size: 14px;
+    color: #4A4A4A;
+}
+.topic_module_2_reg {
+    width: 140px;
+    height: 42px;
+    background-color: red;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
 }
