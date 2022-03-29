@@ -62,13 +62,13 @@ body{
 #navBarSecond{
     height: 62px;
     width: 100%;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     text-align: center;
     background-color: rgb(244,246,246);
 }
 #navBarsecond-2{
     height: 100%;
-    width: 50%;
+    width: 677px;
     margin: auto;
     /* border: 1px solid aqua; */
     display: flex;
@@ -112,7 +112,7 @@ body{
 /* ...................................Medium Screen .........................................*/
 @media screen and (min-width:460px) and (max-width:735px){
    #mainElement{
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 4vw;
    }
    #navBarg{
