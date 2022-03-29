@@ -6,11 +6,13 @@
 body{
     font-family:Arial;
 }
+
 #container{
     height: 900px;
     width: 100vw;
     /* border: 1px solid red; */
 }
+/* ..........1.......................... */
 #navbar{
     height: 100px;
     width: 100%;
@@ -19,7 +21,7 @@ body{
 }
 #navBarg{
     height: 100%;
-    width: 70%;
+    width: 67%;
     /* border: 1px solid green; */
     margin: auto;
     display: flex;
@@ -28,6 +30,7 @@ body{
 #imgUpgrad{
     height: 50%;
     width: 15%;
+    width: auto;
     /* border: 1px solid yellow; */
     /* margin: 2vw */
     margin-top: 2vw;
@@ -40,6 +43,7 @@ body{
 #mainElement{
     height: 50%;
     width: 45%;
+    width: auto;
     /* border: 1px solid yellow; */
     margin-top: 2vw;
     font-size: 14px;
@@ -54,8 +58,79 @@ body{
 #mainElement>a:hover{
     color: red;
 }
-@media (min-width:200px) and (max-width:500px){
-  #navBar{
-      background-color: aqua;
-  }
+/* ..........2.......................... */
+#navBarSecond{
+    height: 62px;
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+    background-color: rgb(244,246,246);
 }
+#navBarsecond-2{
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid aqua; */
+    display: flex;
+   
+}
+#navBarsecond-2>div{
+    border: 1px solid rgb(170, 161, 161);
+    margin:  1.5vw 5px;
+    text-align: center;
+    border-top: none;
+    border-bottom: none;
+}
+
+#navBarsecond-2>div>a{
+    text-decoration: none;
+    color: black;
+    padding: auto;
+    font-size: 15px;
+}
+#navBarsecond-2>div>a:hover{
+    color: red;
+
+}
+/* ..........3 imageDiv.......................... */
+#mainImage{
+    height: 613px;
+    width: 100%;
+    border: 1px solid aqua;
+    background-image: url("https://v.fastcdn.co/u/f8c127f9/59053062-0-Banner-Image.png");
+}
+#underMainImage{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    border: 1px solid green;
+}
+
+
+
+
+/* ...................................Medium Screen .........................................*/
+@media screen and (min-width:460px) and (max-width:735px){
+   #mainElement{
+    font-size: 10px;
+    margin-top: 4vw;
+   }
+   #navBarg{
+    gap: 10px;
+    width: auto;
+    margin-right: 10px;
+   }
+   #navBarsecond-2{
+       margin: 0px;
+   }
+  }
+  /* ..................................Small Screen.............................. */
+  @media screen and (min-width:200px) and (max-width:460px){
+    #navBarg{
+        width: auto;
+    }
+    #mainElement{
+       font-size: 9px;
+       margin-top: 2vw;
+    }
+  }
