@@ -9,7 +9,7 @@ body{
 #container{
     height: 900px;
     width: 100vw;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #navbar{
     height: 100px;
@@ -29,7 +29,8 @@ body{
     height: 50%;
     width: 15%;
     /* border: 1px solid yellow; */
-    margin: 2vw
+    /* margin: 2vw */
+    margin-top: 2vw;
 }
 #imgUpgrad>a>img{
     display: block;
@@ -38,9 +39,10 @@ body{
 }
 #mainElement{
     height: 50%;
-    width: 50%;
+    width: 45%;
     /* border: 1px solid yellow; */
-    margin: 2vw
+    margin-top: 2vw;
+    font-size: 14px;
 }
 #mainElement>a{
     text-decoration: none;
