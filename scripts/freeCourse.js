@@ -23,3 +23,21 @@ setInterval(() => {
     slideshowDiv.append(img);
     i++;
 },3000)
+
+let count = 0;
+let allDiv = document.querySelectorAll('.topic_module ul li')
+// console.log('allDiv: ', allDiv);
+allDiv.forEach((elem) => {
+    elem.addEventListener('click',() => {
+        // console.log(elem);
+        if(count === 0) {
+            elem.style.border = 'none';
+            elem.style.boxShadow = '3px 3px 6px 6px rgb(0 0 0 / 16%)';
+            count = 1;
+        } else {
+            elem.style.boxShadow = 'none';
+            elem.style.border = '1px solid grey';
+            count = 0;
+        }
+    })
+})
