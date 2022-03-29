@@ -43,16 +43,19 @@ body{
     /* border: 1px solid yellow; */
     margin-top: 2vw;
     font-size: 14px;
+    display: flex;
+    gap: 1vw;
 }
 #mainElement>a{
     text-decoration: none;
     color: black;
     padding-top: 4%;
 }
-#mainElement{
-    display: flex;
-    gap: 1vw;
-}
 #mainElement>a:hover{
     color: red;
+}
+@media (min-width:200px) and (max-width:500px){
+  #navBar{
+      background-color: aqua;
+  }
 }
