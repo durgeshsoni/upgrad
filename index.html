@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/styles/courses.css">
     <link rel="stylesheet" href="/styles/homefooter.css">
     <link rel="stylesheet" href="/styles/explorefree.css">
-
+    <link rel="stylesheet" href="/styles/footer.css">
 </head>
 
 
@@ -1046,6 +1046,10 @@
 
 
     </div>
+
+    <div id="footer">
+
+    </div>
 </body>
 
 </html>
@@ -1054,3 +1058,9 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+<script type="module">
+    import footer from './components/footer.js'
+    document.getElementById('footer').innerHTML = footer()
+</script>
