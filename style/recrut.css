@@ -17,12 +17,12 @@ body{
     height: 100px;
     width: 100%;
     background-color: rgb(255,255,255);
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #navBarg{
     height: 100%;
     width: 67%;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -31,7 +31,7 @@ body{
     height: 50%;
     width: 15%;
     width: auto;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     /* margin: 2vw */
     margin-top: 2vw;
 }
@@ -44,7 +44,7 @@ body{
     height: 50%;
     width: 45%;
     width: auto;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     margin-top: 2vw;
     font-size: 14px;
     display: flex;
@@ -62,7 +62,7 @@ body{
 #navBarSecond{
     height: 62px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
     background-color: rgb(244,246,246);
 }
@@ -100,12 +100,17 @@ body{
     background-image: url("https://v.fastcdn.co/u/f8c127f9/59053062-0-Banner-Image.png");
 }
 #underMainImage{
-    height: 100%;
-    width: 70%;
-    margin: auto;
+    height: 90%;
+    width: 550px;
+    /* margin: auto; */
+   margin: 40px 0px 0px 200px;
     border: 1px solid green;
 }
-
+span{
+    color:  white;
+    font-size: 42px;
+    font-weight: bold;
+}
 
 
 
@@ -122,7 +127,9 @@ body{
    }
    #navBarsecond-2{
        margin: 0px;
+      
    }
+
   }
   /* ..................................Small Screen.............................. */
   @media screen and (min-width:0px) and (max-width:460px){
@@ -136,4 +143,17 @@ body{
     #imgUpgrad{
         width: 30%;
     }
+    #navBarsecond-2{
+        width: 95%;
+    }
+    #navBarsecond-2>div>a{
+        font-size: 7px;
+    }
+    #navBarSecond{
+        height: 40px;
+    }
+    *{
+        margin-top: 10px;
+    }
+
   }
