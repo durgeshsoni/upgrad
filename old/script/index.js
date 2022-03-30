@@ -109,7 +109,27 @@ let banner = document.getElementById("banner")
 let signbtn = document.getElementById('button1');
 
 signbtn.addEventListener('click',()=>{
-    let signupPage = document.getElementById('signPage');
-    signupPage.classList.toggle('active');
+    let x = document.getElementById('sign');
+    if(x.style.display === "none"){
+        x.style.display = "block";
+    }else{
+        
+        x.style.display = "none";
+
+    }
 });
+
+
+function getOtp(){
+    let number = document.getElementById('number').value;
+    let x = document.getElementById('sign');
+    if(number.length == 10){
+
+        x.style.display = "none"
+        alert("WelCome")
+    }else{
+        alert("Enter 10 digit number")
+    }
+}
+
 
