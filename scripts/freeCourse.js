@@ -22,7 +22,7 @@ setInterval(() => {
     slideshowDiv.innerHTML = null;
     slideshowDiv.append(img);
     i++;
-},3000)
+},4000)
 
 let count = 0;
 let allDiv = document.querySelectorAll('.topic_module ul li')
@@ -41,3 +41,15 @@ allDiv.forEach((elem) => {
         }
     })
 })
+
+const innerNav_hidden = document.getElementById("innerNavbar_hidden");
+const innerNav = document.getElementById("innerNavbar");
+window.onscroll = function(){
+    if(window.pageYOffset >= 1000){
+        innerNav_hidden.style.display="block";
+        innerNav.style.display="none";
+    } else {
+        innerNav_hidden.style.display="none";
+        innerNav.style.display="block";
+    }
+}
