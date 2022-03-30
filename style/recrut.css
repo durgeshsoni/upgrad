@@ -17,12 +17,12 @@ body{
     height: 100px;
     width: 100%;
     background-color: rgb(255,255,255);
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 #navBarg{
     height: 100%;
     width: 67%;
-    /* border: 1px solid green; */
+    border: 1px solid green;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -31,7 +31,7 @@ body{
     height: 50%;
     width: 15%;
     width: auto;
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
     /* margin: 2vw */
     margin-top: 2vw;
 }
@@ -44,7 +44,7 @@ body{
     height: 50%;
     width: 45%;
     width: auto;
-    /* border: 1px solid yellow; */
+    border: 1px solid yellow;
     margin-top: 2vw;
     font-size: 14px;
     display: flex;
@@ -125,12 +125,15 @@ body{
    }
   }
   /* ..................................Small Screen.............................. */
-  @media screen and (min-width:200px) and (max-width:460px){
+  @media screen and (min-width:0px) and (max-width:460px){
     #navBarg{
         width: auto;
     }
     #mainElement{
-       font-size: 9px;
-       margin-top: 2vw;
+       font-size: 10px;
+       margin-top: 20px;
+    }
+    #imgUpgrad{
+        width: 30%;
     }
   }
