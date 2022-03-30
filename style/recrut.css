@@ -1,26 +1,28 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
-    font-family:Arial;
+body {
+    font-family: Arial;
 }
 
-#container{
+#container {
     height: 900px;
     width: 100vw;
     /* border: 1px solid red; */
 }
+
 /* ..........1.......................... */
-#navbar{
+#navbar {
     height: 100px;
     width: 100%;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
     /* border: 1px solid red; */
 }
-#navBarg{
+
+#navBarg {
     height: 100%;
     width: 67%;
     /* border: 1px solid green; */
@@ -28,7 +30,8 @@ body{
     display: flex;
     justify-content: space-between;
 }
-#imgUpgrad{
+
+#imgUpgrad {
     height: 50%;
     width: 15%;
     width: auto;
@@ -36,12 +39,14 @@ body{
     /* margin: 2vw */
     margin-top: 2vw;
 }
-#imgUpgrad>a>img{
+
+#imgUpgrad>a>img {
     display: block;
     height: 100%;
     width: 100%;
 }
-#mainElement{
+
+#mainElement {
     height: 50%;
     width: 45%;
     width: auto;
@@ -51,179 +56,239 @@ body{
     display: flex;
     gap: 1vw;
 }
-#mainElement>a{
+
+#mainElement>a {
     text-decoration: none;
     color: black;
     padding-top: 4%;
 }
-#mainElement>a:hover{
+
+#mainElement>a:hover {
     color: red;
 }
+
 /* ..........2.......................... */
-#navBarSecond{
+#navBarSecond {
     height: 62px;
     width: 100%;
     /* border: 1px solid red; */
     text-align: center;
-    background-color: rgb(244,246,246);
+    background-color: rgb(244, 246, 246);
 }
-#navBarsecond-2{
+
+#navBarsecond-2 {
     height: 100%;
     width: 677px;
     margin: auto;
     /* border: 1px solid aqua; */
     display: flex;
-   
+
 }
-#navBarsecond-2>div{
+
+#navBarsecond-2>div {
     border: 1px solid rgb(170, 161, 161);
-    margin:  1.5vw 5px;
+    margin: 1.5vw 5px;
     text-align: center;
     border-top: none;
     border-bottom: none;
 }
 
-#navBarsecond-2>div>a{
+#navBarsecond-2>div>a {
     text-decoration: none;
     color: black;
     padding: auto;
     font-size: 15px;
 }
-#navBarsecond-2>div>a:hover{
+
+#navBarsecond-2>div>a:hover {
     color: red;
 
 }
+
 /* ..........3 imageDiv.......................... */
-#mainImage{
+#mainImage {
     height: 613px;
     width: 100%;
-    border: 1px solid white;
+    border: 1px solid rgb(247, 242, 242);
     background-image: url("https://v.fastcdn.co/u/f8c127f9/59053062-0-Banner-Image.png");
 }
-#underMainImage{
-    height: 510px;
+
+#underMainImage {
+    height: 560px;
     width: 550px;
     /* margin: auto; */
-   margin: 40px 0px 0px 200px;
+    margin: 40px 0px 0px 200px;
     /* border: 1px solid green; */
 }
-span{
-    color:  white;
+
+span {
+    color: white;
     font-size: 39px;
     font-weight: bold;
 }
-.allSpan{
-    color: rgb(238,44,60);
+
+.allSpan {
+    color: rgb(238, 44, 60);
     font-size: 20px;
     display: block;
     padding-top: 40px;
 }
+
+#btn1 {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 14px 33px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin-left: 41px;
+}
+
+#btn2 {
+    background-color: rgb(238 44 60);
+    border: none;
+    color: white;
+    padding: 14px 33px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 9px;
+    margin-left: 41px;
+}
+
 /* ............................4.......................................... */
-#callbackDiv{
+#callbackDiv {
     height: 650px;
     width: 100%;
     /* border: 1px solid red; */
     display: flex;
 }
-#callbackDiv-1{
+
+#callbackDiv-1 {
     height: 380px;
     width: 428px;
     /* border: 1px solid red; */
     margin: 129px 10px 0px 250px
 }
-#callbackDiv-2{
+
+#callbackDiv-2 {
     height: 600px;
     width: 363px;
     /* border: 1px solid red; */
     margin: 34px;
     border-radius: 25px;
-    background-color: rgb(243,245,247);
+    background-color: rgb(243, 245, 247);
 }
-.shape{
-    background-color: rgb(238,44,60);
+
+.shape {
+    background-color: rgb(238, 44, 60);
     height: 10px;
     width: 10px;
     border-radius: 50%;
-   margin-right: 15px;
-   display: inline-block;
-   margin-top: 25px;
+    margin-right: 15px;
+    display: inline-block;
+    margin-top: 25px;
 }
-.aftershape{
+
+.aftershape {
     font-size: 17px;
     color: black;
-    font-weight: normal;  
+    font-weight: normal;
 }
-#callbackDiv-3{
+
+#callbackDiv-3 {
     height: 85px;
     width: 100%;
-    background-color: rgb(238,44,60);
+    background-color: rgb(238, 44, 60);
     /* border: 1px solid red; */
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
-#callbackDiv-2>input{
+
+#callbackDiv-2>input {
     width: 80%;
     padding: 12px 20px;
     margin: 12px 10%;
     box-sizing: border-box;
 }
+
 /* ........................5.................................................................. */
-#hireUs{
+#hireUs {
     height: 500px;
     opacity: 0.9;
     width: 100%;
-    background-color: #000000;;
+    background-color: #0a0a0a;
+    ;
     /* border: 1px solid red; */
-    background-image: url("https://v.fastcdn.co/u/f8c127f9/58668822-0-shutterstock-7582641.jpg");
+    /* background-image: url("https://v.fastcdn.co/u/f8c127f9/58668822-0-shutterstock-7582641.jpg"); */
     text-align: center;
 }
-#hireUs>span{
+
+#hireUs>span {
     color: white;
     font-size: 2.3529rem;
     display: inline-block;
     padding-top: 60px;
 }
 
-/* ...................................Medium Screen .........................................*/
-@media screen and (min-width:460px) and (max-width:735px){
-   #mainElement{
-    font-size: 12px;
-    margin-top: 4vw;
-   }
-   #navBarg{
-    gap: 10px;
-    width: auto;
-    margin-right: 10px;
-   }
-   #navBarsecond-2{
-       margin: 0px;
-      
-   }
+#hireUs-2 {
+    height: 360px;
+    width: 692px;
+    border: 1px solid red;
+    margin: auto;
+}
 
-  }
-  /* ..................................Small Screen.............................. */
-  @media screen and (min-width:0px) and (max-width:460px){
-    #navBarg{
+/* ...................................Medium Screen .........................................*/
+@media screen and (min-width:460px) and (max-width:735px) {
+    #mainElement {
+        font-size: 12px;
+        margin-top: 4vw;
+    }
+
+    #navBarg {
+        gap: 10px;
+        width: auto;
+        margin-right: 10px;
+    }
+
+    #navBarsecond-2 {
+        margin: 0px;
+
+    }
+
+}
+
+/* ..................................Small Screen.............................. */
+@media screen and (min-width:0px) and (max-width:460px) {
+    #navBarg {
         width: auto;
     }
-    #mainElement{
-       font-size: 10px;
-       margin-top: 20px;
+
+    #mainElement {
+        font-size: 10px;
+        margin-top: 20px;
     }
-    #imgUpgrad{
+
+    #imgUpgrad {
         width: 30%;
     }
-    #navBarsecond-2{
+
+    #navBarsecond-2 {
         width: 95%;
     }
-    #navBarsecond-2>div>a{
+
+    #navBarsecond-2>div>a {
         font-size: 7px;
     }
-    #navBarSecond{
+
+    #navBarSecond {
         height: 40px;
     }
-    *{
+
+    * {
         margin-top: 10px;
     }
 
-  }
+}
