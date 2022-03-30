@@ -45,11 +45,52 @@ allDiv.forEach((elem) => {
 const innerNav_hidden = document.getElementById("innerNavbar_hidden");
 const innerNav = document.getElementById("innerNavbar");
 window.onscroll = function(){
-    if(window.pageYOffset >= 1000){
+    if(window.pageYOffset >= 1000 && window.pageYOffset <= 5500) {
         innerNav_hidden.style.display="block";
         innerNav.style.display="none";
     } else {
         innerNav_hidden.style.display="none";
         innerNav.style.display="block";
     }
+}
+
+let showFaq = 0
+let faqHead = document.getElementById('faq_section')
+let faqContent = document.querySelector('.faq_content')
+let svg = document.querySelector('#faq_section svg')
+let title = document.querySelector('#faq_section div')
+faqHead.addEventListener('click',() => {
+    if(showFaq == 0) {
+        faqContent.style.display = 'block';
+        svg.setAttribute("transform", "rotate(90)")
+        title.style.color = '#65a0e6';
+        showFaq = 1;
+    } else {
+        faqContent.style.display = 'none';
+        svg.setAttribute("transform", "rotate(360)")
+        title.style.color = 'rgba(21,28,42,.87)';
+        showFaq = 0;
+    }
+})
+
+
+const faqInnerContent = document.getElementsByClassName('accordion__title')
+// console.log('faqInnerContent: ', faqInnerContent);
+const faqInnerHiddenContent = document.getElementsByClassName('accordion_hidden')
+// console.log('faqInnerHiddenContent: ', faqInnerHiddenContent);
+
+
+let faqDetail = 0;
+for(let i = 0; i < faqInnerContent.length; i++) {
+    faqInnerContent[i].addEventListener('click',() => {
+        // console.log(i)
+        if(faqDetail == 0) {
+            faqInnerHiddenContent[i].style.display = 'block';
+            faqDetail = 1;
+        } else {
+            faqInnerHiddenContent[i].style.display = 'none';
+            faqDetail = 0;
+        }
+        
+    })
 }
