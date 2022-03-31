@@ -44,15 +44,27 @@ allDiv.forEach((elem) => {
 
 const innerNav_hidden = document.getElementById("innerNavbar_hidden");
 const innerNav = document.getElementById("innerNavbar");
-window.onscroll = function(){
+const BackToTop__icon = document.querySelector('.BackToTop__icon');
+const ClickToCall_icon = document.querySelector('.ClickToCall_icon');
+window.onscroll = () => {
     if(window.pageYOffset >= 1000 && window.pageYOffset <= 5500) {
         innerNav_hidden.style.display="block";
         innerNav.style.display="none";
+        BackToTop__icon.style.display="block";
+        ClickToCall_icon.style.display="block";
     } else {
         innerNav_hidden.style.display="none";
         innerNav.style.display="block";
     }
 }
+
+BackToTop__icon.addEventListener('click',() => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    BackToTop__icon.style.display="none";
+    ClickToCall_icon.style.display="none";
+
+})
 
 let showFaq = 0
 let footer = document.querySelector('.footer_main')
