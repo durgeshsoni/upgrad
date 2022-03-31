@@ -39,7 +39,6 @@ var arr=[
           slides_div.append(images)
           images.setAttribute("class","sliding-img-m")
 
-          console.log(img_arr.imgUrl)
           
           images.src=img_arr[i].imgUrl;
 
@@ -111,10 +110,10 @@ alumni_logo.map(function(el){
 })
 
 
-document.querySelector("#clickHere").addEventListener('click',function(){
+// document.querySelector("#clickHere").addEventListener('click',function(){
 
-      window.location.href="https://www.upgrad.com/media/"
-})
+//       window.location.href="https://www.upgrad.com/media/"
+// })
 
 document.querySelector("#more-m").addEventListener('change',function(){
       
@@ -143,3 +142,4 @@ document.querySelector("#more-m").addEventListener('change',function(){
 
 
  
+

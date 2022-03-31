@@ -24,7 +24,22 @@
                 <img src="https://www.upgrad.com/_next/image?url=https%3A%2F%2Fupgrad-marketing-platform.s3.amazonaws.com%2Fmpc-v2%2Fassets%2Fimages%2Fupgrad%2Fupgrad-logo.svg&w=128&q=75"
                     alt="" class="upgrad-logo-m">
             </div>
-            <div id="signup"><button class="signup-m h4-m" >Courses</button></div>
+            <div id="signup"><button class="cButton signup-m h4-m" >Courses</button>
+
+                    <div id="courses">
+                        <ul>
+                            <li>MBA (10)</li>
+                            <li>Data Science (9)</li>
+                            <li>Doctorate (1)</li>
+                            <li>Software & Tech (19)</li>
+                            <li>AI & ML (7)</li>
+                            <li>Marketing (4)</li>
+                            <li>Business Analytics (5)</li>
+                            <li>Job Guaranteed (3)</li>
+                            <li>Law (3)</li>
+                        </ul>
+                    </div>
+            </div>
             <div></div>
             <div id="Hireupgrad-page">
                 <p class="greydiv-m">HIRE FROM UPGRAD</p>
@@ -36,13 +51,22 @@
                 <p class="greydiv-m">FOR BUSINESS</p>
             </div>
             <div>
-                <select name="" id="more-m">
+                <p class="moreBtn greydiv-m">MORE</p>
+                    <div id="more2">
+                    <ul>
+                        <li><a href="">UpGrad Webinars</a></li>
+                        <li><a href="">Refer and Earn</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Become A Business Associate</a></li>
+                    </ul>
+                </div>
+                <!-- <select name="" id="more-m">
                     <option value="">More</option>
                     <option value="Upgradweb">UpGrad Webinars</option>
                     <option value="">Refer and Earn</option>
                     <option value="blog">Blog</option>
                     <option value="Associate">Become A Business Associate</option>
-                </select>
+                </select> -->
             </div>
 
             <div id="signup"><button class="signup-m">Sign Up</button></div>
@@ -1063,4 +1087,58 @@
 <script type="module">
     import footer from './components/footer.js'
     document.getElementById('footer').innerHTML = footer()
+</script>
+
+
+<script>
+    //  -------------------courses section ----------------
+
+let brn = document.querySelector('.cButton');
+var course = document.getElementById('courses');
+
+if(brn){
+    
+    brn.addEventListener("mouseenter" , function(e){
+   
+       course.style.display = "block" 
+       course.addEventListener("mouseenter", function(){
+        course.style.display = "block" 
+       })
+
+       course.addEventListener("mouseleave", function(){
+        course.style.display = "none" 
+       })
+
+})
+
+brn.addEventListener("mouseleave", function(){
+  
+       course.style.display = "none" 
+})
+}
+// ----------------------- more2 -------------------
+
+let more = document.querySelector('.moreBtn');
+var moreDiv = document.getElementById('more2');
+
+if(more){
+    
+    more.addEventListener("mouseenter" , function(e){
+   
+       moreDiv.style.display = "block" 
+       moreDiv.addEventListener("mouseenter", function(){
+        moreDiv.style.display = "block" 
+       })
+
+       moreDiv.addEventListener("mouseleave", function(){
+        moreDiv.style.display = "none" 
+       })
+
+})
+
+more.addEventListener("mouseleave", function(){
+  
+       moreDiv.style.display = "none" 
+})
+}
 </script>
