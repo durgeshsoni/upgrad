@@ -143,7 +143,9 @@ span {
     text-decoration: none;
     display: inline-block;
     font-size: 11px;
-    margin-left: 41px;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 15px;
 }
 
 #btn2 {
@@ -156,6 +158,7 @@ span {
     display: inline-block;
     font-size: 9px;
     margin-left: 41px;
+    font-size: 12px;
 }
 
 /* ............................4.......................................... */
@@ -219,11 +222,10 @@ span {
     height: 500px;
     opacity: 0.9;
     width: 100%;
-    /* background-color: #0a0a0a; */
-    
     /* border: 1px solid red; */
     background-image: url("https://v.fastcdn.co/u/f8c127f9/58668822-0-shutterstock-7582641.jpg");
     text-align: center;
+
 }
 
 #hireUs>span {
@@ -235,7 +237,7 @@ span {
 
 #hireUs-2 {
     height: 360px;
-    width: 692px;
+    width: 70%;
     border: 1px solid red;
     margin: auto;
 }
