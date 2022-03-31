@@ -55,6 +55,7 @@ window.onscroll = function(){
 }
 
 let showFaq = 0
+let footer = document.querySelector('.footer_main')
 let faqHead = document.getElementById('faq_section')
 let faqContent = document.querySelector('.faq_content')
 let svg = document.querySelector('#faq_section svg')
@@ -64,12 +65,14 @@ faqHead.addEventListener('click',() => {
         faqContent.style.display = 'block';
         svg.setAttribute("transform", "rotate(90)")
         title.style.color = '#65a0e6';
+        footer.style.marginTop = '440px'
         showFaq = 1;
     } else {
         faqContent.style.display = 'none';
         svg.setAttribute("transform", "rotate(360)")
         title.style.color = 'rgba(21,28,42,.87)';
         showFaq = 0;
+        footer.style.marginTop = '0px'
     }
 })
 
@@ -86,9 +89,11 @@ for(let i = 0; i < faqInnerContent.length; i++) {
         // console.log(i)
         if(faqDetail == 0) {
             faqInnerHiddenContent[i].style.display = 'block';
+            footer.style.marginTop = '480px';
             faqDetail = 1;
         } else {
             faqInnerHiddenContent[i].style.display = 'none';
+            footer.style.marginTop = '440px';
             faqDetail = 0;
         }
         

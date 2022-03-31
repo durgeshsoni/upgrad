@@ -8,9 +8,63 @@ body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
-#navbar {
-    height: 60px;
+.navbar-m{
     width: 98.76vw;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.navbar-m>div:nth-child(1){
+    width: 18%;
+    height: 100%;
+}
+.navBar_options {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 300px;
+}
+.upgrad-logo-m{
+   margin-left: 110px;
+   height: 100%;
+}
+.greydiv-m{
+    font-size: 12px;
+    font-weight: bold;
+    color: #535B62;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.nav_courses {
+    background: linear-gradient(270deg,#ff5757 0,#d02035 100%);
+    border-color: white;
+    color: white;
+    width: 120.22px;
+    height: 32px!important;
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    cursor: pointer;
+}
+#signup {
+    cursor: pointer;
+    margin: 0 50px 0 100px;
+    background: linear-gradient(270deg,#ff5757 0,#d02035 100%);
+    border-color: white;
+    color: white;
+    width: 100px;
+    height: 32px;
+    margin: 0 0 0 50px; 
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #slideshow {
     transition: 1s;
@@ -284,5 +338,4 @@ body {
 .faq_content {
     background-color: #f9fbfc;
     cursor: pointer;
-    transition: .1s color ease-in;
 }
