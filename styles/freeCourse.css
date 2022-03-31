@@ -37,6 +37,9 @@ body {
     letter-spacing: 1px;
     cursor: pointer;
 }
+.greydiv-m:hover {
+    color: rgb(239,64,61);
+}
 .nav_courses {
     background: linear-gradient(270deg,#ff5757 0,#d02035 100%);
     border-color: white;

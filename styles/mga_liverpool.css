@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 98.76vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-m{
+    width: 98.76vw;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.navbar-m>div:nth-child(1){
+    width: 18%;
+    height: 100%;
+}
+.navBar_options {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 300px;
+}
+.upgrad-logo-m{
+   margin-left: 110px;
+   height: 100%;
+}
+.greydiv-m{
+    font-size: 12px;
+    font-weight: bold;
+    color: #535B62;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.greydiv-m:hover {
+    color: rgb(239,64,61);
+}
+.nav_courses {
+    background: linear-gradient(270deg,#ff5757 0,#d02035 100%);
+    border-color: white;
+    color: white;
+    width: 120.22px;
+    height: 32px!important;
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    cursor: pointer;
+}
+#signup {
+    cursor: pointer;
+    margin: 0 50px 0 100px;
+    background: linear-gradient(270deg,#ff5757 0,#d02035 100%);
+    border-color: white;
+    color: white;
+    width: 100px;
+    height: 32px;
+    margin: 0 0 0 50px; 
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    background-image: url(https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprogram-backgrounds%2Funiversity%2Ftr%3Aq-2/ljmu_banner__1643275637474.png);
+    height: 80vh;
+    width: 100%;
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.inner_container {
+    margin: 0 104.5px;
+    padding: 36px 0 0;
+}
+.BannerSection__info__header {
+    width: 340px;
+    height: 140px;
+    background-position: 0 -120px;
+    background-image: url(https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites/prod/in/mba-liverpool-business-school/1648032232379/sprite-in/mba-liverpool-business-school.png);
+    transform: scale(.5) translate(-50%,-50%);
+    
+}
+.BannerSection__info__title {
+    color: #fff;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    width: 66%;
+    margin-top: -50px;
+}
+.BannerSection__info__desc {
+    color: rgba(255,255,255,.9);
+    margin: 8px 0;
+    font-size: 16px;
+    line-height: 24px;
+    height: auto;
+    width: 58%;
+    font-weight: 400;
+}
+.inner_container_footer {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.inner_BTN {
+    background-color: #ef403d;
+    height: 44px;
+    width: 200px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 18px 0 0;
+    padding: 5px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner_video {
+    margin: 18px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+.sub_main {
+    width: 98.76vw;
+    height: 150px;
+    background-color: none;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    /* opacity: 0.5; */
+}
+.sub_main_1 {
+    height: 100%;
+    width: 80%;
+    background-color: white;
+    box-shadow: 2px 2px 4px 4px rgb(0 0 0 / 16%);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+}
+.sub_main_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.p1 {
+    font-size: 22px;
+}
+.p2 {
+    color: #666E75;
+    font-size: 14px;
+}
+
+#innerNavbar_hidden {
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+#innerNav_hidden {
+    position: fixed;
+    top: 0;
+    box-shadow: 3px 3px 6px 6px rgb(0 0 0 / 16%);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    /* margin-left: -17px; */
+    width: 1140px;
+    background: white;
+}
+#innerNav_hidden ul {
+    display: flex;
+}
+#innerNav_hidden ul li {
+    list-style: none;
+    padding: 24px 18px;
+    color: #808080;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#innerNav_hidden ul li:hover {
+    background-color: #f9f9f9;
+}
+.innerNav_hidden_btn div {
+    background-color: #fe6765;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 25px;
+    margin-top: -8px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+#innerNav_hidden ul li:last-child:hover {
+    background-color: white;
+}
+.innerNav_hidden_list:nth-child(1) {
+    background-color: #f9f9f9;
+    border-bottom: 5px solid #f23e36;
+    color: #f23e6f;
+}
