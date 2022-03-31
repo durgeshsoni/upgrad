@@ -115,31 +115,60 @@ alumni_logo.map(function(el){
 //       window.location.href="https://www.upgrad.com/media/"
 // })
 
-document.querySelector("#more-m").addEventListener('change',function(){
+// document.querySelector("#more-m").addEventListener('change',function(){
       
-  if(this.value=="Upgradweb")
-     window.location.href="More-Upgrad-webinar.html"
+//   if(this.value=="Upgradweb")
+//      window.location.href="More-Upgrad-webinar.html"
 
-})
-document.querySelector("#more-m").addEventListener('change',function(){
+// })
+// document.querySelector("#more-m").addEventListener('change',function(){
       
-  if(this.value=="Associate")
-     window.location.href="BusinessAssociate.html"
+//   if(this.value=="Associate")
+//      window.location.href="BusinessAssociate.html"
 
-})
+// })
 
-document.querySelector("#more-m").addEventListener('change',function(){
+// document.querySelector("#more-m").addEventListener('change',function(){
       
-   if(this.value=="blog")
-      window.location.href="blog.html"
+//    if(this.value=="blog")
+//       window.location.href="blog.html"
  
- })
+//  })
  
  
- document.querySelector("#signup").addEventListener("click",function(){
-    window.location.href="More-Upgrad-webinar.html"
- })
+//  document.querySelector("#signup").addEventListener("click",function(){
+//     window.location.href="More-Upgrad-webinar.html"
+//  })
 
 
  
+
+// -------------------sign up form start -------------------------
+
+let signbtn = document.getElementById('button1');
+if(signbtn){
+   signbtn.addEventListener('click',()=>{
+      let x = document.getElementById('sign');
+      if(x.style.display === "none"){
+          x.style.display = "block";
+      }else{
+          
+          x.style.display = "none";
+  
+      }
+  });
+  
+  
+  function getOtp(){
+      let number = document.getElementById('number').value;
+      let x = document.getElementById('sign');
+      if(number.length == 10){
+  
+          x.style.display = "none"
+          alert("WelCome")
+      }else{
+          alert("Enter 10 digit number")
+      }
+  }
+}
 

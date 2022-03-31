@@ -4,26 +4,37 @@ body{
 .courses{
     margin-top: 60px;
 }
-.button{
+.head{
+    font-size: 42px;
+    font-weight: bold;
+   padding-left: 50px;
+}
+.head:hover{
+    color: #00bcd4;
+}
+    .button{
     display:flex;
     flex-direction: row;
     overflow-x: auto;
     margin-top: 24px;
     grid-gap: 37px;
     gap: 37px;
+    padding-left: 47px;
     
 }
 .button1{
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 18px;
-    color: #f23e36;
+    
     cursor: pointer;
     position: relative;
     padding-left:30px;
-    text-decoration: underline;
     margin-bottom:80px;
     
+}
+.button1:hover{
+  color: #f23e36;
 }
 h2{
     color:black;
