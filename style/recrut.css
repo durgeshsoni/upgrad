@@ -219,10 +219,10 @@ span {
     height: 500px;
     opacity: 0.9;
     width: 100%;
-    background-color: #0a0a0a;
-    ;
+    /* background-color: #0a0a0a; */
+    
     /* border: 1px solid red; */
-    /* background-image: url("https://v.fastcdn.co/u/f8c127f9/58668822-0-shutterstock-7582641.jpg"); */
+    background-image: url("https://v.fastcdn.co/u/f8c127f9/58668822-0-shutterstock-7582641.jpg");
     text-align: center;
 }
 
