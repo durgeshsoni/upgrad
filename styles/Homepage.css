@@ -1,8 +1,10 @@
-
-
-body{
-    font-family: CircularXX,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
+
 button{
     cursor: pointer;
 }
@@ -241,7 +243,6 @@ button{
 .greydiv-m{
 
     font-size: 12px;
-    font-family: sans-serif;
     font-weight: bolder;
     color: grey;
     margin-top: 30px;
@@ -250,7 +251,6 @@ button{
     border: 0px;
     width: 70%;
     font-size: 12px;
-    font-family: sans-serif;
     font-weight: bolder;
     color: grey;
     margin-top: 30px;
@@ -310,12 +310,10 @@ button{
 .h4-m{
 
     font-size: 20px;
-    font-family: sans-serif;
     font-weight: bold;
 }
 .p-m{
     font-size: 13px;
-    font-family: sans-serif;
     margin-top:28px;
     margin-left: 10px;
 }
@@ -343,7 +341,6 @@ button{
    margin-left: 37.5%;
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
    color: white;
-   font-family: sans-serif;
    font-weight: bold;
 
     
@@ -353,7 +350,6 @@ button{
 
 }
 .patners-m-txt{
-    font-family: sans-serif;
     font-weight: bold;
     margin-left: 20px;
 }
@@ -439,7 +435,6 @@ button{
 }
 .black-text-clr{
     font-size: 41px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-left: 25px;
 }
@@ -476,7 +471,6 @@ button{
     border-radius: 10px;
 }
 .h3-text-w{
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 530;
     margin: 20px;
 }
@@ -486,13 +480,11 @@ button{
     color: #29b6f6;
     border-radius: 5px;
     margin-left: 18px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 .ex-btn-tomato{
     background-color: #f23e36;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin: auto;
     width: 30%;
@@ -535,7 +527,6 @@ button{
 }
 .alumni-name{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .alumni-logo{
     margin-left: 22%;
@@ -590,11 +581,7 @@ button{
     margin-left: 10%;
     margin-top: 10px;
 }
-*{
-    font-family: CircularXX,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;;
-    font-weight: bold;
-    box-sizing: border-box;
-}
+
 .carousel-cell-fr>img{
     border-radius: 10px;
     height: 200px;
@@ -685,7 +672,6 @@ button{
     text-align: center;
     padding: 15px;
     color: white;
-    /* font-family: inherit; */
     font-size: 18px;
     font-weight: 600;
 }
