@@ -241,7 +241,7 @@
 .AboutSection_Testimonial {
     flex: 0.7;
     height: 312px;
-    background-color: turquoise;
+    /* background-color: turquoise; */
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -285,11 +285,12 @@
     color: #000;
 }
 .Tesimonial_Logo {
-    width: 340px;
-    height: 140px;
-    background-position: 0 -120px;
+    width: 241px;
+    height: 81px;
+    background-position: -465px -162px;
     background-image: url(https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites/prod/in/mba-liverpool-business-school/1648032232379/sprite-in/mba-liverpool-business-school.png);
     transform: scale(.5) translate(-50%,-50%);
+    margin-top: 10px;
 }
 .Syllabus_Section {
     height: 182.69px;
@@ -399,4 +400,198 @@
     bottom: 0;
     margin: 0 30px 50px 0;
     cursor: pointer;
+}
+
+.admission_Process {
+    height: 511.6px;
+    width: 100%;
+    padding: 84px 104.5px;
+    background-color: #fcfcfc;
+}
+.admission_Process 
+h4 {
+     font-size: 32px;
+     color: #101010;
+     font-weight: 300;
+}
+.admission_head {
+    font-size: 16px;
+    color: #5A5A5A;
+    margin-top: 20px;
+}
+.admission_body {
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+}
+.admission_body_part {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 6px 22px 0 rgb(0 0 0 / 8%);
+    cursor: pointer;
+}
+.admission_body_part h2 {
+    line-height: 1.4;
+    font-size: 22px;
+    color: #101010;
+    font-weight: 400;
+}
+.admission_body_part div {
+    margin: 12px 0;
+    font-size: 14px;
+    color: #5A5A5A;
+    line-height: 1.43;
+}
+.programPricing {
+    width: 100%;
+    height: 380.16px;
+    padding: 36px 104.5px;
+    background-color: #f5f8fa;
+}
+.program_header {
+    font-size: 40px;
+    font-weight: 600;
+    color: #292929;
+}
+.program_body {
+    width: 100%;
+    display: flex;
+    padding: 12px;
+    padding-left: 0px;
+}
+.program_body>div {
+    flex: 1;
+}
+.program_bodyMain_header {
+    margin: 0 0 12px;
+    display: flex;
+    gap: 30px;
+}
+.program_bodyMain_footer {
+    font-size: 14px;
+    color: #5a5a5a;
+    letter-spacing: .14px;
+}
+.program_bodyMain_header_body {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.program_bodyMain_header_body div {
+    font-size: 32px;
+    color: #333;
+    font-weight: 300;
+    letter-spacing: -.3px;
+}
+.program_btn {
+    width: 152.86px;
+    height: 34px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-image: linear-gradient(106deg,#f53941,#ff6e6a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.influencers {
+    width: 100%;
+    height: 406.8px;
+    padding: 72px 104.5px;
+}
+.hiring_Partners {
+    /* background-color: turquoise; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+.influencers_header {
+    font-size: 36px;
+    font-weight: 300;
+    color: #444;
+}
+.influencers_body {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -.2px;
+    color: #475465;
+}
+.influencers_logo {
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+}
+.LOGOS {
+    flex: 1;
+    height: 80px;
+    /* width: 240px; */
+    background-image: url(https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites/prod/in/mba-liverpool-business-school/1648032232379/sprite-in/mba-liverpool-business-school.png);
+    transform: scale(.5);
+} 
+.influencers_logo div:nth-child(1) {
+    background-position: -706px -80px;
+}
+.influencers_logo div:nth-child(2) {
+    background-position: -706px -160px;
+}
+.influencers_logo div:nth-child(3) {
+    background-position: -706px 0;
+}
+.influencers_logo div:nth-child(4) {
+    background-position: -706px -320px;
+}
+.influers_logo div:nth-child(5) {
+    background-position: -706px -400px;
+}
+.ReferAndEarn {
+    width: 100%;
+    height: 254px;
+    display: flex;
+    background: #fafbfc;
+    border: 1px solid #e3ebf3;
+}
+.ReferAndEarn_1 {
+    padding: 0 10px;
+    flex: 0.75;
+}
+.ReferAndEarn_2 {
+    padding: 60px 0 0 0;
+    flex: 2.25;
+}
+.ReferAndEarn_2 div {
+    font-size: 32px;
+    line-height: 120%;
+    color: #4A4A4A;
+}
+.ReferAndEarn_2 p {
+    font-size: 15px;
+    margin-top: 18px;
+}
+.ReferAndEarn_3 {
+    flex: 1.2;
+    background-image: url(https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Frefer-and-earn/refer-and-earn-section2.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.ReferAndEarn_btn {
+    height: 44px;
+    width: 234px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #ef403d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
