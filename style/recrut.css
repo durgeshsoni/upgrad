@@ -245,25 +245,30 @@ span {
     margin-top: 21px;
 
 }
-#hireUs-2 >span{
+
+#hireUs-2>span {
     display: inline-block;
     padding-top: 10px;
 }
-.ticklogo{
+
+.ticklogo {
     height: 45px;
     width: 59px;
     padding-top: 5px;
 
 }
-.spanTag{
+
+.spanTag {
     font-size: 17px;
 }
-.hireUs-3{
+
+.hireUs-3 {
     height: 100%;
     width: 50%;
     /* border: 1px solid red; */
 }
-#buybutton{
+
+#buybutton {
     background-color: rgb(238 44 60);
     border: none;
     color: white;
@@ -277,18 +282,165 @@ span {
     margin-top: 10px;
     cursor: pointer;
 }
+
 /* <!-- ...........................6................................................... --> */
-#placement{
+#placement {
     height: 400px;
+    width: 100%;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.highlights {
+    color: black;
+    font-size: 35px;
+    display: inline-block;
+    padding-top: 50px;
+}
+
+#placement-2 {
+    height: 130px;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.placement-3 {
+    height: 58%;
+    width: 12%;
+    /* border: 1px solid red; */
+    margin-top: 2%;
+}
+
+.placementSpan-1 {
+    color: red;
+    font-size: 30px;
+}
+
+.placementSpan-2 {
+    color: black;
+    font-size: 15px;
+
+}
+
+.placement-button-1 {
+    border: 2px solid rgb(227, 20, 20);
+    color: black;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 9px;
+    font-size: 12px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: -40px;
+}
+
+.placement-button-2 {
+    border: 2px solid rgb(238,44,60);
+    color: white;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 9px;
+    font-size: 12px;
+    background-color:rgb(238,44,60);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 40px;
+}
+.placement-button-1:hover{
+    background-color: black;
+    color: white;
+  
+}
+/* ...............................7............................. */
+#learners{
+    height: 600px;
+    width: 100%;
+    /* border: 1px solid red; */
+   text-align: center;
+   background-color: rgb(244,246,246);
+   
+}
+#learners>span{
+    color: rgb(228, 21, 21);
+    font-size: 2.3529rem;
+    display: inline-block;
+    padding-top: 60px;
+}
+#learners-1{
+    height: 300px;
+    width: 60%;
+    margin: auto;
+    margin-top: 60px;
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 10px;
+}
+.learners-2{
+    height: 100%;
+    width: 20%;
+    /* border: 1px solid red; */
+}
+.learners-3{
+    height: 15%;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: rgb(220,28,29);
+    font-size: 15px;
+}
+.learnerSpan{
+color: white;
+font-size: 15px;
+display: inline-block;
+padding-top: 10px;
+}
+.spanLine{
+    color: red;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+.spanLine-2{
+    display: inline-block;
+    color: black;
+    font-size: 10px;
+    margin-top: 5px;
+}
+.learnerimage{
+    height: 180px; 
+    width: 100%;
+}
+/* .................................8................................ */
+#recruiter{
+    height: 800px;
     width: 100%;
     border: 1px solid red;
     text-align: center;
 }
-.highlights{
-   color: black;
-   font-size: 35px;
-   display: inline-block;
-   padding-top: 50px;
+#recruiter>span{
+    color: rgb(228, 21, 21);
+    font-size: 2.3529rem;
+    display: inline-block;
+    padding-top: 50px;
+}
+#grid-container{
+    height: 450px;
+    width: 70%;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+#grid-container>div{
+    border: 1px solid red;
 }
 /* ...................................Medium Screen .........................................*/
 @media screen and (min-width:460px) and (max-width:735px) {
