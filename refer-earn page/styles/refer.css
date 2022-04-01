@@ -1,0 +1,374 @@
+#navbar{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 60px;
+    width: 10   0%;
+    margin: auto;
+    justify-content: space-around;
+    font-family: sans-serif;
+    /* gap:20px; */
+}
+#parent1{
+    /* border: 1px solid red; */
+    width: 30%;    
+    display: flex;
+}
+#parent2{
+    /* border: 1px solid red; */
+    width: 50%;    
+    display: flex;
+}
+#parent1>div{
+    /* border: 1px solid teal; */
+    height: 80%;
+    width: 30%
+    
+}
+#parent1>div>img{
+    width: 100px;
+    justify-content:center;
+    cursor: pointer;
+    align-items: center;
+    
+}
+/* #courses{
+    display: flex;
+    border: 1px solid red;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    
+} */    
+
+/* #courses:hover{
+    color: red;
+    background-color: white;
+    cursor: pointer;
+} */
+
+#parent2>div{
+    /* border: 1px solid teal; */
+    width: 25%;
+    height: 60%;
+    margin-top: 10px;
+}
+
+#parent3{
+    justify-content: right;
+    width: 100px;
+    /* border: 1px solid blue; */
+}
+#parent3>div{
+    /* border: 1px solid teal; */
+    width: 100px;
+    height: 80%;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #ef403d;
+    color: white;
+    text-align: center;
+   
+    
+    
+}
+#signup:hover{
+    box-shadow: 10px;
+}
+
+.a>a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #535b62;
+    font-weight: 600;
+}
+.a>a:hover{
+    color: red;
+}
+/* -------------------------------------------------xxxxxxxxxxxx------------------------- */
+#refer>h2{
+font-size: 45px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #4a4a4a;
+font-weight: 400;
+line-height: 1.5;
+}
+#container{
+margin-top: 20px;
+display: flex;
+/* border: 1px solid red; */
+width: 100%;
+height: 400px;
+
+}
+#part1{
+/* border: 1px solid red; */
+width: 50%;
+font-style: inherit;
+font-weight:200;
+}
+#part2{
+/* border: 1px solid red; */
+width: 50%;
+}
+#video{
+/* border: 1px solid teal; */
+height: 265px;
+width: 532px;
+margin: auto;
+align-items: center;
+margin-top: 50px;
+}
+#video>video{
+height: 265px;
+width: 532px;
+
+}
+#sigr{
+width: 200px;
+height: 44px;
+margin-top: 25px;
+margin-left: 50px;
+/* border: 1px solid red; */
+font-size: 16px;
+font-weight: 600;
+color: #fff;
+background: #ef403d;
+border-radius: 4px;
+cursor: pointer;
+justify-content: center;
+padding-bottom: calc(0.375em - 1px);
+padding-left: 0.75em;
+padding-right: 0.75em;
+padding-top: calc(0.375em - 1px);
+text-align: center;
+align-items: center;
+line-height: 1.5;
+vertical-align: top;
+/* font-size: ; */
+}
+#sigr a{
+color: white;
+text-decoration: none;
+font-size: 18px;
+}
+#h1{
+font-size: 38px;
+font-weight: 700;
+color: #000;
+}
+#container2>p{
+    font-size: 21px;
+    margin-top: 10px;
+    opacity: .6;
+    color: #000;
+    
+}
+#container2{
+
+margin: auto;
+/* border: 5px solid red; */
+text-align: center;
+margin-top: 20px;
+}
+#container3{
+width: 1128px;
+height: 394px;
+/* border: 3px solid blue; */
+display: flex;
+margin: auto;
+background-color: #fff;
+box-shadow: 60px #4a4a4a;
+
+}
+#container3 >div{
+margin: auto;
+height: 394px;
+width: 350px;
+/* border: 1px solid blue; */
+text-align: center;
+box-shadow: 0 7px 31px rgb(0 0 0 / 5%);
+
+}
+#content{
+font-size: 16px;
+color: #999;
+line-height: 26px;
+margin-top: 20px;
+
+}
+#title{
+font-size: 26px;
+font-weight: 600;
+line-height: 26px;
+margin-top: 40px;
+color: #000;
+}
+
+
+#icon{
+/* border:1px solid red; */
+height: 30%;
+
+}
+#icon>img{
+margin-top: 10px;
+}
+
+/* ------------------------***************----------------
+*/
+
+#container4{
+
+margin: auto;
+/* border: 5px solid red; */
+text-align: center;
+margin-top: 10px;
+box-shadow: 0 7px 31px rgb(0 0 0 / 5%)
+}
+#container4>p{
+font-size: 21px;
+margin-top: 10px;
+opacity: .6;
+color: #000;
+box-shadow: 0 7px 31px rgb(0 0 0 / 5%)
+
+}
+#container5{
+/* border: 1px solid red; */
+height: 80px;
+display: flex;
+justify-content: center;    
+gap:20px;
+box-shadow: 0 7px 31px rgb(0 0 0 / 5%);
+margin-top: 20px;
+}
+#container5>div{
+/* border: 1px solid red; */
+height: 60px;
+width: 150px;
+border-radius: 5px; 
+text-align: center; 
+align-content: center;
+align-items: center;
+line-height: 3.5;
+box-shadow: 0 7px 31px rgb(0 0 0 / 5%);
+font-weight : 700; 
+
+ 
+}
+
+#enrolled{
+background: linear-gradient(150.2deg,#f53941 -8.74%,#ff6e6a 94.03%);   
+word-spacing: 1px;
+letter-spacing: normal;
+font-family: "Promixa Nova",-apple-system,BlinkMacSystemFont,Roboto,Arial,sans-serif;
+cursor: pointer;
+height: 60px;
+text-align: center;
+color: #fff;
+box-shadow: 0 7px 31px rgb(0 0 0 / 5%)
+}
+
+#container6{
+width: 100%;
+height: 600px;
+/* border: 1px solid purple; */
+display: flex;
+box-shadow: 0 7px 31px rgb(0 0 0 / 5%);
+
+}
+#scrollbox{
+width: 40%;
+height: 60%;
+/* border: 2px solid red; */
+overflow: hidden;
+overflow-y: scroll;
+overflow-x: scroll;
+box-shadow: 0 7px 31px rgb(0 0 0 / 5%)
+
+}
+#institutions{
+width: 70%;
+/* border: 1px solid red; */
+display: grid;
+grid-template-columns: repeat(3,400px);
+grid-template-rows: repeat(8,100px);
+box-shadow: 0 7px 31px rgb(0 0 0 / 5%)
+}
+#scrollbox>div{
+width: 100%;
+height: 60px;
+border: 0.2px solid rgb(243, 237, 237);
+line-height: 2.5;
+padding: 10px;
+color: #5a5a5a;
+box-shadow: 0 7px 31px rgb(0 0 0 / 5%)
+
+}
+/* #scrollbox>div : hover{
+box-shadow: 0px 0px 0px 4px #ef403d;   pending
+cursor: pointer;
+
+} */
+
+#signup a{
+text-decoration: none;
+color: white;
+line-height: 2.5;
+letter-spacing:0.1mm;
+font-size: 14px;
+font-weight: 600;
+}
+#ref-earn{
+max-width: 1140px;
+margin: auto;
+}
+
+video{
+border-radius: 10px;
+}
+#institutions{
+/* border: 5px solid red; */
+margin: auto;
+
+}
+.imgc{
+/* border: 1px solid red; */
+width: 500px;
+}
+.imgc> img{
+width: 80px;
+height: 80px;
+}
+.dept{
+/* border: 1px solid red; */
+width: 60%;
+}
+.dept>p {
+/* border: 1px solid red; */
+width: 60%;
+margin-top : -4px;
+line-height: 1.5;
+text-align: left;
+color: #2e2e2e;
+font-size: 16px;
+
+
+}
+.price{
+/* border: 1px solid red; */
+width: 20%;
+text-align: center;
+line-height: 4.5;
+color: #2e2e2e;
+}
+.segment{
+display: flex;
+/* border: 3px solid green; */
+width: 798px;
+}
+
