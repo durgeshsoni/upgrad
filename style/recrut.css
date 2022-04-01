@@ -418,9 +418,9 @@ padding-top: 10px;
 }
 /* .................................8................................ */
 #recruiter{
-    height: 800px;
+    height: 700px;
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
 }
 #recruiter>span{
@@ -432,7 +432,7 @@ padding-top: 10px;
 #grid-container{
     height: 450px;
     width: 70%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
     margin-top: 40px;
     display: grid;
@@ -440,8 +440,57 @@ padding-top: 10px;
     grid-template-rows: repeat(5,1fr);
 }
 #grid-container>div{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
+/* .....................................9................................. */
+#review{
+    height: 700px;
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: rgb(241,242,242);
+    text-align: center;
+}
+#review>span{
+    color: rgb(228, 21, 21);
+    font-size: 2.3529rem;
+    display: inline-block;
+    padding-top: 50px;
+}
+/* ......................................10....................................... */
+#footer{
+    height: 230px;
+    width: 100%;
+    border: 1px solid rgb(0,0,0);
+    background-color: rgb(0,0,0);
+    display: flex;
+}
+#footer-1{
+    height: 100px;
+    width: 200px;
+    /* border: 1px solid red; */
+    margin-top: 80px;
+    margin-left: 200px;
+}
+#footer-2{
+    height: 100%;
+    width: 300px;
+    /* border: 1px solid red; */
+    margin-left: 500px;
+    display: flex;
+}
+.footer-3{
+    height: 65%;
+    width: 50%;
+    /* border: 1px solid red; */
+    margin-top: 18%;
+}
+.footer-3>a{
+    color: white;
+    font-size: 15px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
 /* ...................................Medium Screen .........................................*/
 @media screen and (min-width:460px) and (max-width:735px) {
     #mainElement {
