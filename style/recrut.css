@@ -107,7 +107,7 @@ body {
 
 /* ..........3 imageDiv.......................... */
 #mainImage {
-    height: 613px;
+    height: 650px;
     width: 100%;
     border: 1px solid rgb(247, 242, 242);
     background-image: url("https://v.fastcdn.co/u/f8c127f9/59053062-0-Banner-Image.png");
@@ -142,7 +142,7 @@ span {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 11px;
+    font-size: 6px;
     margin-left: 20px;
     margin-top: 20px;
     font-size: 15px;
@@ -236,12 +236,60 @@ span {
 }
 
 #hireUs-2 {
-    height: 360px;
+    height: 300px;
     width: 70%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: auto;
-}
+    text-align: left;
+    display: flex;
+    margin-top: 21px;
 
+}
+#hireUs-2 >span{
+    display: inline-block;
+    padding-top: 10px;
+}
+.ticklogo{
+    height: 45px;
+    width: 59px;
+    padding-top: 5px;
+
+}
+.spanTag{
+    font-size: 17px;
+}
+.hireUs-3{
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+#buybutton{
+    background-color: rgb(238 44 60);
+    border: none;
+    color: white;
+    padding: 15px 72px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 9px;
+    margin-left: 41px;
+    font-size: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+/* <!-- ...........................6................................................... --> */
+#placement{
+    height: 400px;
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+}
+.highlights{
+   color: black;
+   font-size: 35px;
+   display: inline-block;
+   padding-top: 50px;
+}
 /* ...................................Medium Screen .........................................*/
 @media screen and (min-width:460px) and (max-width:735px) {
     #mainElement {
