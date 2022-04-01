@@ -1,0 +1,430 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family: Lato, Helvetica, sans-serif;
+  /* background-color: bisque; */
+}
+
+#mainDiv{
+  max-width: 1400px;
+  background-size: cover;
+}
+.nav{
+  height: 70px;
+  /* background-color: gray; */
+}
+.nav>img{
+  height: 60px;
+  width: 130px;
+  margin-left:220px;
+  margin-top: 10px;
+}
+/* ========== nav end========================================= */
+
+.backImg
+{
+  background: url("https://v.fastcdn.co/u/f8c127f9/39546511-0-shutterstock-5910353.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 900px;
+}
+
+/* ///////////////back img////////////////////////////////// */
+
+.contentImg img{
+  width:403px;
+  height: 860px;
+  position: relative;
+}
+
+input{
+padding: 0 10px 0 10px;
+width: 310px;
+height: 47px;
+border-width: thin;
+background-color: rgba(238, 235, 235,0.6);
+border-radius: 3px;
+border-color:rgba(238, 235, 235,0.6); ;
+}
+.contentForm{
+  position: absolute;
+  margin-top: -850px;
+  margin-left: 39px;
+  line-height: 60px;
+  color: rgb(153, 153, 153);
+}
+
+.p2{
+  width: 320px;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 2px;
+  text-align: justify;
+}
+.innerContent{
+  margin-top: 230px;
+  font-size:33px;
+  /* background-color: aqua; */
+  width:320px;
+  line-height:45px;
+  color: white;
+  font-weight: bold
+  
+}
+
+
+.mainInnerContent{
+  display: flex;
+  width: 70%;
+  /* background-color: gray; */
+  position: absolute;
+  margin-top: -900px;
+  gap:30px;
+  margin-left: 370px;  
+}
+
+.Layout{
+  height: 900px;
+  width: 100%;
+  margin-top: -900px;
+  background-color:rgba(3, 3, 43, 0.7);
+}
+#btn1{
+  background-color: #EE2C3C;
+  color: #fff;
+  height: 57px;
+  font-weight: bold;
+  width: 330px;
+}
+li{
+  list-style: none;
+}
+
+/* ////////////back img  end/////////////////// */
+
+div>img{
+  width: 79px;
+  height: 79px;
+}
+.Icons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 40vh;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.iconBtn{
+  width: 140px;
+  margin-top: 20px;
+  height:31px;
+  font-size: 13px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding-top: 8px;
+  align-items: center;
+  font-weight: bold;
+ border-radius: 5px;
+}
+
+.iconBtn>a{
+  text-decoration: none;
+  color: black;
+}
+
+/* //////////Icons end//////////////////////////// */
+
+.AboutUpgard{
+  background: url("https://v.fastcdn.co/u/f8c127f9/39546716-0-shutterstock-7455158.jpg");
+  height: 810px; 
+  position: relative;
+}
+
+.secOverlay{
+opacity: 0.9;
+background-color: rgba(8, 11, 32 , 0.9);
+height: 810px; 
+}
+
+.innerLayout{
+  /* position: absolute; */
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  /* background-color: #EE2C3C; */
+
+}
+.mainIcons2{
+  display: grid;
+  grid-template-columns:repeat(2, 200px);
+  margin-top: 100px;
+  justify-content: center;
+  row-gap: 60px;
+  column-gap: 100px;
+  text-align: center;
+}
+
+.Icons2 p{
+  color: #fff;
+ 
+}
+
+.p3>p {
+  color: #fff;
+  text-align: center;
+  
+}
+.underP{
+  font-size: 13px;
+}
+.Icons2>img+p{
+  font-size:19.81px;
+}
+.p3{
+  padding-top: 40px;
+  font-size: 40px;
+  width: 300px;
+  margin: auto;
+}
+.hr{
+  background-color: red;
+  width: 230px;
+  height: 3px;
+  margin: auto;
+  margin-top: 10px;
+}
+.p4>p {
+  color: #fff;
+  padding: 0% 10px 0% 10px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 17px;
+  line-height: 30px;
+}
+.innp{
+  margin-top: 30px;
+}
+/* //////////////////////////////AboutUpgard end///////////////////// */
+.Partnership_Opportunity{
+  height: 45vh;
+}
+.p5{
+  color: black;
+  font-size: 40px;
+  width: 500px;
+  margin: auto;
+  margin-top: 30px;
+  font-weight: bold;
+}
+.hr1{
+  background-color: red;
+  width: 300px;
+  height: 3px;
+  margin: auto;
+  margin-top: 20px;
+  
+}
+.p6{
+  width: 900px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 70px;
+  line-height: 25px;
+  margin-left: 230px;
+}
+/* //////////////////////Partnership_Opportunity end/////////////////////////// */
+
+.backImg3{
+  background: url("https://v.fastcdn.co/u/f8c127f9/39546511-0-shutterstock-5910353.jpg");
+  width: 100%;
+  background-size: cover;
+  height: 329px;
+ 
+}
+.innercontent3{
+ max-width: 65%;
+  /* background-color: #EE2C3C; */
+  height: 100%;
+  margin: auto;
+}
+
+.t3rdOverlay{
+  width: 100%;
+  height:329px ;
+  background-color:  rgba(8, 11, 32 , 0.9);
+ }
+.heading{
+ padding-top: 20px;
+ 
+font-size: 37px;
+font-weight:bold;
+
+color: #fff;
+}
+
+.p7{
+  margin-top: 100px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.p7>div{
+  width: 490px;
+  font-size: 18px;
+  line-height:25px;
+  color: #fff;
+  
+}
+.p7>div>ul>li{
+  list-style-type:disc;
+  
+}
+/* ////////////////////Why Become An upGrad Business Associate? end////////////////////////////// */
+.Startup_Cost{
+  height: 451px;
+  width: 100%;
+}
+.innerContent4{
+  width: 960px;
+  /* background-color: #EE2C3C; */
+  margin: auto;
+  margin-top:40px;
+}
+.heding3{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.hr4{
+  background-color: red;
+  width: 200px;
+  height: 3px;
+  margin: auto;
+  margin-top: 20px;
+  
+}
+.intext6{
+  width: 873px;
+  text-align:center;
+  font-size:20px;
+  font-weight: bold;
+  line-height: 35px;
+  margin-top: 30px;
+}
+
+.p8{
+ margin-top: 40px;
+ font-size:18px;
+ line-height: 30px;
+}
+.p8 ul li{
+  list-style-type: disc;
+  margin-left: 40px;
+}
+/* ///////////////////////Startup Cost end////////////////////////// */
+
+.Terms_Conditions
+{
+  background: url("https://v.fastcdn.co/u/f8c127f9/39551056-0-shutterstock-7264415.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 381px;
+}
+.overLayout4{
+  width: 100%;
+  height: 381px;
+  background-color:  rgba(8, 11, 32 , 0.9);
+}
+
+.innercontent6
+{
+  /* background-color: #EE2C3C; */ 
+  width: 960px;
+  height: 381px;
+  margin: auto;
+
+}
+.head4{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.plist{
+  margin-top: 40px;
+  font-size: 17.8336px;
+  word-spacing: 5px;
+  width: 90%;
+  line-height: 30px;
+}
+.plist ul li{
+  list-style-type: disc;
+  margin-left: 60px;
+  font-weight: bold;
+ color: #fff;
+}
+.btn2{
+  margin-top: 50px;
+  margin-left: 35%;
+ padding:20px;
+  width: 240px;
+  background-color: #EE2C3C;;
+  text-align: center;
+ border-radius: 10px;
+}
+
+
+.btn2 a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* ///////////////////////////////////////////// */
+
+
+.footer{
+  height:30vh;
+  background-color: #000;
+  /* margin-top: 20px; */
+  display: grid;
+  justify-content: center;
+  
+}
+
+.logo2{
+  height: 70px;
+ 
+  border: 1px solid red;
+  display: grid;
+  justify-content: center;
+  width: 1000px;;
+  border-bottom: 1px solid gray;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+}
+
+.logo2>img{
+  width: 180px;
+}
+.bottomp{
+  color: white;
+  margin-top: -40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
