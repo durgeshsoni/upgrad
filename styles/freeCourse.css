@@ -175,6 +175,7 @@ body {
     color: #808080;
     font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
 }
 #innerNavbar {
     display: block;
@@ -194,6 +195,13 @@ body {
     color: #808080;
     font-size: 14px;
     font-weight: bold;
+    cursor: pointer;
+}
+#innerNav ul li:hover {
+    background-color: #f9f9f9;
+}
+#innerNav_hidden ul li:hover {
+    background-color: #f9f9f9;
 }
 .innerNav_list:nth-child(1) {
     background-color: #f9f9f9;

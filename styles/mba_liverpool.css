@@ -170,12 +170,13 @@
 }
 
 #innerNavbar_hidden {
-    display: block;
+    /* display: none; */
     display: flex;
     justify-content: center;
 }
 #innerNav_hidden {
     position: fixed;
+    z-index: 2;
     top: 0;
     box-shadow: 3px 3px 6px 6px rgb(0 0 0 / 16%);
     border-radius: 8px;
@@ -214,4 +215,188 @@
     background-color: #f9f9f9;
     border-bottom: 5px solid #f23e36;
     color: #f23e6f;
+}
+
+.AboutSection {
+    padding: 150px 104.5px;
+}
+.AboutSection_Title {
+    font-size: 40px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    color: #292929;
+}
+.AboutSection_Desc {
+    font-size: 32px;
+    color: #101010;
+    font-weight: 300;
+}
+.AboutSection_Body {
+    display: flex;
+    margin-top: 30px;
+}
+.AboutSection_List {
+    flex: 1.5;
+}
+.AboutSection_Testimonial {
+    flex: 0.7;
+    height: 312px;
+    background-color: turquoise;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: 0 6px 22px 0 rgb(0 0 0 / 8%);
+}
+.AboutSection_List ul {
+    display: grid;
+    grid-template-columns: repeat(2,48%);
+    grid-gap: 20px;
+}
+.AboutSection_List ul li {
+    list-style: none;
+    /* background-color: yellow; */
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.List_Logo {
+    height: 48px;
+    width: 48px;
+    background-image: url(https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites/prod/in/mba-liverpool-business-school/1648032232379/sprite-in/mba-liverpool-business-school.png);
+    background-position: -386px -746px;
+    margin: 0 20px 0 0;
+    padding: 5px;
+    transform: scale(.5) translate(-50%,-50%);
+} 
+.List_Details {
+    font-size: 16px;
+    color: #5A5A5A;
+}
+.Testimonial_Desc {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: italic;
+    overflow: hidden;
+    font-weight: 300;
+    color: #000;
+}
+.Tesimonial_Logo {
+    width: 340px;
+    height: 140px;
+    background-position: 0 -120px;
+    background-image: url(https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites/prod/in/mba-liverpool-business-school/1648032232379/sprite-in/mba-liverpool-business-school.png);
+    transform: scale(.5) translate(-50%,-50%);
+}
+.Syllabus_Section {
+    height: 182.69px;
+    width: 100%;
+    padding: 48px 24px;
+    /* background-color: #f95053; */
+    background-image: linear-gradient(106deg,#f53941,#ff6e6a)
+}
+.Syllabus_Section_1 {
+    /* background-color: yellow; */
+    height: 100%;
+    width: 100%;
+    padding: 0 80.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Syllabus_Content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Syllabus_Content div {
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+}
+.Syllabus_Content p {
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+}
+.Syllabus_Download {
+    height: 48px;
+    width: 300px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f95053;
+    font-weight: bold;
+    gap: 8px;
+    cursor: pointer;
+}
+.ProgramValues {
+    width: 100%;
+    height: 491px;
+    background-color: #f7fafc;
+    padding: 0 104.5px;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(2,50%);
+}
+.ProgramValues_parts {
+    flex: 1;
+    /* border: 1px solid black; */
+    /* height: 100%; */
+    padding: 72px 40px;   
+}
+.Values_1 {
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0 0 20px;
+}
+.Values_2 {
+    font-size: 16px;
+    line-height: 24px;
+    color: #475465;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+.BackToTop__icon {
+    display: none;
+    width: min-content;
+    padding: 20px 24px;
+    box-shadow: 3px 3px 6px 6px rgb(0 0 0 / 16%);
+    border-radius: 6px;
+    height: 61px;
+    width: 57px;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    margin: 0 0 50px 30px;  
+    cursor: pointer;
+    transition: 1s;
+}
+.BackToTop_icon {
+    transform: rotate(-90deg);
+}
+.ClickToCall_icon {
+    display: none;
+    height: 61px;
+    width: 57px; 
+    width: min-content;
+    padding: 10px;
+    box-shadow: 3px 3px 6px 6px rgb(0 0 0 / 16%);
+    border-radius: 6px;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    margin: 0 30px 50px 0;
+    cursor: pointer;
 }
