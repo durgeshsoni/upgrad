@@ -52,17 +52,9 @@ var arr=[
 
  slide()
 
-document.querySelector('#Hireupgrad-page').addEventListener('click',function(){
-    window.location.href="hireformUpgrad.html"
-})
-document.querySelector('#forbusiness').addEventListener('click',function(){
-   window.location.href="forbusiness.html"
-})
 
 
-document.querySelector('#studyabroad').addEventListener('click',function(){
-   window.location.href="studyabroad.html"
-})
+
 
 let alumni_logo=[
    {  //1
