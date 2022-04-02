@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/blog.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <script src="https://kit.fontawesome.com/9994241b69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar1">
+        <div><img src="https://www.upgrad.com/blog/wp-content/uploads/2021/09/upgrad_logo-1.png" alt="upgrad_logo"></div>
+        <div id="nav-inner">
+            <div>EXPLORE COURSES</div>
+            <div style="color: red;">BLOG</div>
+            <div>MBA,MANAGEMENT & DEGREE</div>
+            <div>TOP INSTITUTES</div>
+        </div>
+        
+
+    </div>
+
+    <div id="slider">
+        <button onclick="prev()" class="btn left">&#60;</button>
+        <div id="items">
+          
+        </div>
+        <button onclick="next()" class="btn right">&#62;</button>
+    </div>
+
+    <div class="nav-2">
+        <div style="color: red;">All</div>
+        <div>
+            <div id="cat">
+                <div>Select Category</div>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            
+            <div id="sor">
+                <div>Sort By</div>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            
+            
+        </div>
+
+    </div>
+
+    <div id="category">
+        
+    </div>
+    <div id="sort">
+       
+    </div>
+    <div class="show-box">
+        <div id="container">
+
+        </div>
+        <button id="btn">Load More</button>
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+    
+ 
+</body>
+</html>
+<script src="./scripts/blog.js"></script>
+<script type="module">
+    import footer from './components/footer.js'
+    document.getElementById('footer').innerHTML = footer();
+</script>
