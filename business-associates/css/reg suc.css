@@ -3,6 +3,12 @@
   padding: 0%;
  font-family: Arial;
 }
+.blackNav>a{
+  text-decoration: none;
+ margin-left: 20px;
+ padding: 10px;
+ color: #fff;
+}
 .mainContainer{
   max-width: 1400px;
   background-color:beige;
