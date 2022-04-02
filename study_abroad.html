@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>studyabroad</title>
+    <style>
+        body{
+            max-width: 1800px;
+            margin: auto;
+            font-family: sans-serif;
+
+        }
+        #abroad_navbar{
+            margin: 20px;
+            height: 40px ;
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav_options{
+            color: #373636;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        #profile_img{
+            margin: auto;
+            margin-top: 5px;
+            height: 40px;
+        }
+        
+        .slider {
+        width: 100%;
+        height: 400px;
+       
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 100%;
+        background-color: pink;
+        height: 400px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -100%;
+      }
+      #slide-3:target ~ .image-container {
+        left: -200%;
+      }
+      .buttons {
+        position: relative;
+        top: -25px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border: rgb(59, 53, 53) 3px solid;
+        border-radius:  50px;
+        
+        background-color: rgb(255, 255, 255);
+      }
+      .sliding_imgs{
+          width: 100%;
+          height: 400px;
+      }
+      #talkbutton{
+          background-color: rgb(242,62,54);
+          color: white;
+          text-align: center;
+          width: 60%;
+          border-radius: 10px;
+          height: 50px;
+      }
+      #talk_text{
+          padding-top: 15px;
+          margin: 40px;
+          font-weight: 600;
+          font-size: larger;
+      }
+      #mast{
+          text-align: center;
+      }
+      #browse{
+         
+          background-color: rgb(250,251,252);
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+          height: 100px;
+          width: 80%;
+          margin: auto;
+          padding: 20px;
+      }
+      .options_flex{
+          display: flex;
+          justify-content: space-around;
+      }
+      .browes_optios{
+          border: 0.5px grey solid;
+          border-radius: 30px;
+          padding: 5px 10px;
+          width: fit-content;
+          color: grey;
+          margin-right: 10px;
+          margin-top: 10px;
+          
+      }
+      .browes_optios:hover{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      }
+      #cform{
+          background-image: url("https://ik.imagekit.io/upgrad1/abroad-images/home/images/home-form-banner-new.jpg");
+          background-color: #cccccc;    
+        height: 800px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-top: 80px;    
+        padding-top: 50px;
+    }
+    #form_book{
+        background-color: white;
+        width: 50%;
+        border-radius: 20px;
+        margin-left: 5%;
+        padding: 20px 30px ;
+        margin-bottom: 30px;
+
+    }
+    .form_input{
+        border-radius: 5px;
+        border: 2px grey solid;
+        width: 100%;
+        height: 30px;
+        
+    }
+    .mobile_input{
+        border-radius: 5px;
+        border: 2px grey solid;
+        height: 30px;
+        margin-top: 8px;
+        width: 102%;
+        
+    }
+    #mobile_no{
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+
+    }
+    #mspace{
+        margin-right: 10px;
+    }
+    .level_flex{
+        display: flex;
+        justify-content: center;
+    }
+    .level_submit{
+        width: 50%;
+        background-color: rgb(242,62,54);
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        height: 50px;
+        
+        margin: auto;
+    }
+    .level_submit:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .form_detail{
+        color:rgb(85, 82, 82);
+        font-weight: bold;
+    }
+    #lower_page{
+        padding-top: 10px;
+        background-color:rgb(239,239,239) ;
+        text-align: center;
+        margin:  auto;
+        padding: 40px;
+
+    }
+    #articles{
+        width: 50%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin: auto;
+        border-radius: 5px;
+        padding: 15px;
+        font-weight: bold;
+    }
+    .uni-imgs{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    #our_uni{
+        margin: auto;
+        text-align: center;
+        padding: 20px;
+    }
+    </style>
+    <style>
+        
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 14px;
+    font-weight: bold;
+  border: none;
+  outline: none;
+  color: rgb(59, 53, 53) ;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+
+</head>
+<body>
+    <div id="abroad_navbar"> 
+        <div >
+            <img src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-112,pr-true,q-80/logo/upGradAbroad_logo_web.svg" alt="">
+        </div>
+       
+        <div class="dropdown">
+            <p  class="dropbtn ">STUDY ABROAD PROGRAM
+              <i class="fa fa-caret-down"></i>
+            </p>
+            <div class="dropdown-content">
+              <a href="#">Becholers Programs</a>
+              <a href="#">Masters Programs</a>
+              <a href="#">Booster Program</a>
+            
+            </div>
+          </div> 
+        <div class="dropdown">
+            <p  class="dropbtn ">EXAMS 
+              <i class="fa fa-caret-down"></i>
+            </p>
+            <div class="dropdown-content">
+              <a href="#">IELTS Exam</a>
+              <a href="#">GRE Exam</a>
+              <a href="#">GMAT Exam</a>
+              <a href="#">TOEFL Exam</a>
+              <a href="#">PTE Exam</a>
+              <a href="#">SAT Exam</a>
+              <a href="#">ACT Exam</a>
+              <a href="#">Duoling Exam</a>
+            </div>
+          </div> 
+        <p class="nav_options">WEBINARS</p>
+        <p class="nav_options">ARTICLES</p>
+        <p class="nav_options">FRANCHISE PARTNERS</p>
+        <div>
+        <img id="profile_img" src="https://img.icons8.com/ios-glyphs/344/test-account.png" alt="">
+    </div>
+    </div>
+    <div class="slider">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <div class="image-container">
+          <img class="sliding_imgs" src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-1362,pr-true,q-80/home/images/ab-banner-cta-red-home1.jpg" class="slide" width="500" height="300" />
+          <img class="sliding_imgs" src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-1362,pr-true,q-80/home/images/ab-banner-cta-red-home1.jpg" class="slide" width="500" height="300" />
+          <img class="sliding_imgs" src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-1362,pr-true,q-80/home/images/ab-banner-new-home3.jpg" class="slide" width="500" height="300" />
+        </div>
+        <div class="buttons">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+      <center>
+      <div id="talkbutton">
+          <p id="talk_text">TALK TO OUT COUNSELOR</p>
+      </div>
+    </center>
+    <br>
+    <div id="mast">
+    <h1 >Master Accelerator Programs</h1>
+    <br>
+    <br>
+</div>
+
+<div id="browse">
+    <h3>Browse by Country</h3>
+    <div class="options_flex">
+<div class="browes_optios"> Germany </div>
+<div class="browes_optios"> USA</div>
+<div class="browes_optios"> Ireland</div>
+<div class="browes_optios"> UK </div>
+<div class="browes_optios"> Canada </div>
+<div class="browes_optios"> Australia </div>
+<div class="browes_optios"> France </div>
+<div class="browes_optios"> All </div>
+
+</div>
+</div>
+<div id="cform">
+    
+    <form >
+        <div id="form_book">
+            
+        <h2>Book a Free Counseling Session</h2>
+        <div>
+        <p class="form_detail">Name:</p>
+        <input class="form_input" type="text" placeholder="Enter Your Name">
+    </div>
+        <div id="mobile_no">
+            <p class="form_detail" id="mspace">Mobile:</p>
+            <input class="mobile_input" type="text" placeholder="Enter Your Mobile">
+        </div>
+        <div>
+            <div>
+        <p class="form_detail" >Email:</p>
+        <input class="form_input" type="text" placeholder="Enter Your Email">
+    </div>
+    <div>
+    <h3>What level of study are you looking to go for?</h3>
+        <div class="level_flex">
+            <div class="browes_optios">Becholer's</div>
+            <div class="browes_optios">Master</div>
+        </div>
+</div>
+<div>
+    <h3>Which Country are you planning to study in?</h3>
+        <div class="level_flex">
+            <div class="browes_optios">Germany</div>
+            <div class="browes_optios">Use</div>
+            <div class="browes_optios"> Ireland</div>
+            <div class="browes_optios"> UK </div>
+            <div class="browes_optios"> Canada </div>
+            
+        </div>
+        <div class="level_flex">
+           
+            
+            <div class="browes_optios"> Australia </div>
+            <div class="browes_optios"> France </div>
+            <div class="browes_optios"> Other </div>
+        </div>
+</div>
+<p style="text-align: center; font-size: 10px; margin: 20px; ">By submitting this form, you agree to the <u>Terms of Use</u> and <u>Privacy Policy</u></p>
+<div class="level_submit">
+   <h3 style="padding-top: 13px;">SUBMIT</h3> 
+</div>
+</div>
+    </form>
+</div>
+<div id="lower_page">
+    <h2>Let Our AI Enginr Recommend Courses</h2>
+    <h2>Meeting Your Profile</h2>
+    <div class="level_submit">
+        <h4 style="padding-top: 20px;">START NOW</h4>
+    </div>
+</div>
+<div id="our_uni">
+    <h1>Our University Partners</h1>
+    <div class="uni-imgs">
+        <img src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-120,pr-true,q-80//home/images/logo/IU.svg" alt="">
+        <img src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-120,pr-true,q-80//home/images/logo/yeshiva.svg" alt="">
+        <img src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-120,pr-true,q-80//home/images/logo/clark.svg" alt="">
+        <img src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-120,pr-true,q-80//home/images/logo/dundalk.svg" alt="">
+        </div>
+        <div class="uni-imgs">
+        <img src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-120,pr-true,q-80//home/images/logo/esigelec.svg" alt="">
+        <img src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-120,pr-true,q-80//home/images/logo/UCW.svg" alt="">
+        <img src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-120,pr-true,q-80//home/images/logo/yorkville.svg" alt="">     
+        <img src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-120,pr-true,q-80//home/images/logo/jcu-code.svg" alt="">     
+    </div>
+    <div id="articles">
+        STUDY ABROAD ARTICLES
+    </div>
+</div>
+<div id="upgrad_abroad">
+
+    <h3>upGrad Abroad</h3>
+</div>
+
+
+
+</body>
+</html>
