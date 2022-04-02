@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Oxygen:wght@300&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+
+/* ----------------footer-top-logo-section -------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: CircularXX,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.footer_main{
+    width: 100%;
+    margin: auto;
+    padding: 60px 120px;
+    background: rgba(21,28,42,.87);
+    font-family: Arial, Helvetica, sans-serif ;
+    color: #ffffff;
+    margin-top: 200px;
+}
+/* .footer_container{
+    border: 1px solid orangered;
+} */
+.footer_logo_container{
+    /* border: 1px solid orangered; */
+    display: flex;
+    justify-content: space-between;
+}
+.footer_logo_box-1{
+    /* border: 1px solid orangered; */
+    width: 160px;
+    height: 144px;
+}
+.footer_logo_box-1 img{
+    color: #ffffff;
+    cursor: pointer;
+}
+.footer_logo_tagline{
+    width: 160px;
+    height: 16px;
+    font-size: 12px;
+}
+.social_icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.icons_size{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.android-box{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 15px;
+    border-radius: 7px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.android-box>div{
+    display: flex;
+}
+/* ----------------footer-top-logo-section -------------------*/
+/* ----------------footer-bottom-section -------------------*/
+.footer_section{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(250px,1fr));
+    grid-gap: 32px;
+    gap: 32px;
+    border-top: 1px solid #555;
+    margin-top: 16px;
+    padding-top: 20px;
+}
+.footer_list{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 8px;
+    gap: 8px;
+}
+.list{
+    opacity: .7;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #bbbdc1;
+    cursor: pointer;
+}
+.Footer_copyrightLabel{
+    color: #fff;
+    opacity: .7;
+    font-size: 10px;
+    border-top: 1px solid #555;
+    margin-top: 16px;
+    padding-top: 20px;
+}
+/* ----------------footer-bottom-section -------------------*/
