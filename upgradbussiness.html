@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contact{
+            color: white;
+            background-color: rgb(241,44,44);
+            height: 40px;
+            text-align: center;
+            border-radius: 3px;
+            font-weight: bold;
+            width: fit-content;
+            
+            margin: auto;
+            padding: 0px 15px;
+        }
+        .contact:hover{
+            background-color: white ;
+            color: rgb(241,44,44); 
+        }
+        
+        .channel{
+            color: rgb(241,44,44);
+            background-color: white;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            height: 40px;
+            text-align: center;
+            border-radius: 3px;
+            font-weight: bold;
+            margin: auto;
+            width: fit-content;
+            padding: 0px 15px;
+        }
+        .channel:hover{
+            background-color: rgb(241,44,44);
+            color: white; 
+        }
+        #bussi_nave{
+            display: flex;
+            z-index: 1000000;
+            justify-content: space-between;
+            margin: auto;
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            overflow: hidden; 
+            height: 108px;
+            background-color: rgb(252,252,252);
+            width: 100%;
+            color: black;
+         
+        }
+        .bussi_img{
+            margin-top: -50px;
+            height: 207px;    
+        }
+        .buss_img{
+            margin-top: 10px;
+            padding: 10px;
+            height: 60px;    
+        }
+        #b_options{
+            color: black;
+            margin: auto 10px;
+            display: block;
+            gap: 10px;
+            font-size: large;
+            font-weight: bold;
+            height: 100%;
+            display: flex;
+        }
+        .hover_option{
+            height: 60%;
+            margin: auto;
+            padding: 40px 10px 0px 10px;
+            color: black;
+        }
+        .hover_option:hover{
+            background-color:rgb(241,44,44) ;
+            border-radius: 5px;
+            color: white;
+        }
+        #people{
+        background-image: url("https://v.fastcdn.co/u/f8c127f9/58216147-0-Banner.jpg");
+        background-color: #cccccc;    
+        height: 850px;
+        width: 100%;
+        margin: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        }
+        #wet{
+
+            width: 90%;
+            margin: auto;
+            height: 100%;
+        }
+        #wwb{
+            margin-top: 30px;
+            background-color:rgb(236,60,76);
+           
+            opacity: 0.92;
+            color: white;
+            width: 45%;
+            padding: 50px;
+            font-size: 30px;
+            padding: 170px 50px;
+        }
+        #ex_co{
+            width: 97%;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            opacity: 0.92;
+            color: white;
+            margin-top: -95px;
+            height: 90px;
+            padding: 5px 20px;
+        }
+        #fle_bu{
+            display: flex;
+            gap: 20px;
+        }
+        .back_img{
+            
+           display: block;
+           width: 18%;
+           padding: 50px;
+           margin: 20px;
+           color: white;
+           border-radius: 10px;
+           font-size: 20px;
+        }
+        .oppara{
+            width: 70%;
+            
+        }
+        .boldline{
+            width: 50px;
+            margin: 5px;
+            height: 5px;
+            background-color: red;
+        }
+        #img_3{
+            display: flex;
+            gap: 20px;
+           margin-left: 15%;
+           background-color:rgb(244,244,244) ;
+        }
+       #visionn{
+           text-align: center;
+           margin: auto;
+       }
+       #curcles{
+        margin: auto;
+        display: flex;
+        width: 70%;
+       }
+       .cur5{
+           border-radius: 50%;
+           background-color: rgb(240,243,245);
+           text-align: center;
+           width: 150px;
+           height: 150px;
+           margin: auto;
+           
+       }
+       .color_red{
+           color: red;
+           
+       }
+       .img_award{
+           height: 150px;
+           border-radius: 5px;
+
+       }
+       #awars{
+           display: flex;
+           justify-content: center;
+           gap: 30px;
+           margin-bottom: 20px;
+       }
+       #award_sec{
+        color: grey;
+        text-align: center;
+        background-color: rgb(244,244,244);
+        padding: 10px ;
+        margin: 10px;
+       }
+       #solu{
+           background-color: rgb(251,251,251);
+           text-align: center;
+           margin: 50px 0px;
+       }
+       .icon_uni{
+           height: 40px;
+           gap: 20px;
+           margin: 10px;
+       }
+       #div_2{
+           display: flex;
+           justify-content: center;
+       }
+       .inter_uni{
+           width: 30%;
+           margin: 10px;
+           padding: 20px;
+           box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+       }
+       .trust_img{
+           display: flex;
+           width: 60%;
+           gap: 5px;
+           margin: auto;
+       }
+       .trust_icon{
+           border-radius: 5px;
+           margin-right: 10px;
+           margin-top: 5px;
+           height: 60px;
+           width: 150px;  
+           background-color: rgb(240,243,245);
+       }
+       .span_text{
+           color: rgb(255, 255, 255);
+           filter: brightness(100%);
+            text-align: center;
+            max-width: 180px;
+           margin-top: -70px ;
+           
+           font-size: 25px;
+       }
+       .span_img{
+           filter: brightness(50%);
+           height: 140px;
+           max-width: 200px;
+       }
+       .span_flex{
+           width: 90%;
+           margin: auto;
+           gap: 10px;
+           display: flex;
+           justify-content: center;
+       }
+
+       .offers_new{
+           text-align: center;
+           height: fit-content;
+           width: fit-content;
+           padding: 10px;
+           line-height: 10px;
+           
+       }
+       #new_offers{
+          text-align: center;
+       }
+       .black_div{
+           background-color: black;
+           color: white;
+           text-align: center;
+           padding: 20px;
+       }
+       .creati{
+           width: 40%;
+           padding: 20px;
+       }
+       .formcheck{
+           display: flex;
+           margin-top: -20px;
+       }
+       .checkbo{
+           margin-top: 20px;
+           
+       }
+       #back_limg{
+        background-image: url("//v.fastcdn.co/u/f8c127f9/58187312-0-two-confident-busine.jpg");
+        filter: brightness(85%);
+       }
+       #last_sec{
+          display: flex;
+           justify-content: center;
+           
+       }
+       #form_flex{
+           width: 25%;
+           background-color: white;
+           filter: brightness(110%);
+           padding: 20px;
+           margin: auto;
+       }
+       .input_info{
+        margin-top: 20px;
+        width: 100%;
+        height: 30px;
+       }
+       #lets{
+           filter: brightness(1000%);
+           color: white;
+           font-size: 100px;
+           margin: auto;
+           margin-left: 15%;
+           width: 40%;
+
+       }
+       .social_img{
+           color: white;
+           border-radius: 10px;
+           height: 70px;
+       }
+       #fooler_ug{
+           display: flex;
+           color: white;
+           text-align: left; 
+       }
+       .black_di{
+           background-color: black;
+           display: flex;
+           justify-content: space-around;
+           padding: 30px;
+       }
+       .app_links{
+           width: 200px;
+           color: white;
+           border: 2px solid white;
+           border-radius: 5px;
+           padding: 10px;
+           text-align: center;
+           height: 30px;
+           margin: 10px;
+       }
+       .app_links:hover{
+           background-color: white;
+           color: black;
+           font-weight: bold;
+       }
+       a{
+           color: white;
+       }
+       a:hover{
+           color: black;
+       }
+       body{
+           max-width: 1920px ;
+           margin: auto;
+       }
+    </style>
+</head>
+<body>
+    <div id="bussi_nave">
+      <div >
+      <img class="bussi_img" src="https://v.fastcdn.co/u/f8c127f9/56802312-0-logo-main.png" alt="">
+    
+    </div>
+    <div id="b_options">
+        <p class="hover_option">Home</p>
+        <p class="hover_option">Our Offering</p>
+        <p class="hover_option">Events and Press Releases</p>
+        <p class="hover_option">Meet our exprets</p>
+        <div  class="channel" style="padding-top: 20px;"> Channel partner</div>
+        <div style="padding-top: 20px;" class="contact">Contact us</div>
+    </div>
+    
+    </div>
+    <div id="people">
+        <div id="wet">
+        <div id="wwb">
+            <h1>We transform people</h1>
+            <h1>who transform your</h1>
+            <h1>bussiness</h1>
+        </div>
+    </div>
+        <div id="ex_co">
+            <h1>We have added more power to your transformation suit</h1>
+            <div id="fle_bu">
+            <div  class="channel" style="padding-top: 20px"> Executive coaching </div>
+            <h1> &</h1>
+            <img class="buss_img" src="https://v.fastcdn.co/u/f8c127f9/60487700-0-upgard-work-better-l.png" alt="">
+        </div>
+        </div>
+        
+    </div>
+    <div id="img_3">
+        <div style="background-color: rgb(56,53,53);" class="back_img">
+        <div>
+            <h2>Who we are</h2>
+            <div class="boldline"></div>
+            <p class="oppara">
+                We are the B2B arm of upGrad, South Asia's largest online higher education company with a learner base of over 1 Million across 85+ countries.
+            </p>
+        </div>
+    </div>
+    <div style="background-color: rgb(238,42,61);" class="back_img">
+        <div>
+            <h2>Who we are</h2>
+            <div class="boldline"></div>
+            <p class="oppara">
+                We are the B2B arm of upGrad, South Asia's largest online higher education company with a learner base of over 1 Million across 85+ countries.
+            </p>
+        </div>
+    </div>
+    <div style="background-color: rgb(56,53,53);" class="back_img">
+        <div>
+            <h2>Who we are</h2>
+            <div class="boldline"></div>
+            <p class="oppara">
+                We are the B2B arm of upGrad, South Asia's largest online higher education company with a learner base of over 1 Million across 85+ countries.
+            </p>
+        </div>
+    </div>
+    </div>
+    <div id="visionn">
+        <h1>Our Vision</h1>
+        <p>To be a wholesome development partner for your talent</p>
+        <img class="item-content-box item-block image" data-at="image" alt="" src="//v.fastcdn.co/u/f8c127f9/60484105-0-mstgif.gif" data-src="//v.fastcdn.co/u/f8c127f9/60484105-0-mstgif.gif" data-retina-src="//v.fastcdn.co/u/f8c127f9/60484105-0-mstgif.gif" srcset="//v.fastcdn.co/u/f8c127f9/60484105-0-mstgif.gif 2x">
+    </div>
+    <div id="curcles">
+        <div class="cur5">
+            <div class="middle_te">
+            <h1 class="color_red">85%</h1>
+            <p>CSAT</p>
+        </div>
+        </div>
+        <div class="cur5">
+            <div class="middle_te">
+            <h1 class="color_red">300%</h1>
+            <p>Industry Mentors</p>
+        </div>
+        </div>
+        <div class="cur5">
+            <div class="middle_te">
+            <h1 class="color_red">78%</h1>
+            <p>Learner Outcome</p>
+        </div>
+        </div>
+        <div class="cur5">
+            <div class="middle_te">
+            <h1 class="color_red">93%</h1>
+            <p>Completoin Rate</p>
+        </div>
+        </div>
+        <div class="cur5">
+            <div class="middle_te">
+            <h1 class="color_red">100%</h1>
+            <p>Business</p>
+        </div>
+        </div>
+    </div>
+    <div id="award_sec">
+        <h2 > Awards and Accolades</h2>
+        <div id="awars">
+            
+            <img class="img_award" src="https://v.fastcdn.co/u/f8c127f9/60484150-0-Gold-Learning-Award-.png" alt="">            
+            <img class="img_award" src="https://v.fastcdn.co/u/f8c127f9/60484475-0-1SxrlXmTQuWffgxVCpuB.png" alt="">
+            <img class="img_award" src="https://v.fastcdn.co/u/f8c127f9/60484580-0-BB-Education-logo.jpg" alt="">
+            <img class="img_award" src="https://v.fastcdn.co/u/f8c127f9/60484350-0--8a12ec0e-227c-11eb-.jpg" alt="">
+        </div>
+    </div>
+    <div id="solu">
+        <h2 style="color: red;">Access the best programs from the world’s top universities</h2>
+        <div id="div_2">
+            <div class="inter_uni">
+                <h3>International universities</h3>
+            <div>
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/57034142-0-Duke.png" alt="">
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/58274332-0-deakin-u-logo.png" alt="">
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/58183192-0-logo-horizonal-green.png" alt="">
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/60378495-0-Emory-University-Log.png" alt="">
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/58277697-0-SSBM-logo-FINAL-08.png" alt="">
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/60515760-0-asu-logo-1.png" alt="">
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/60515780-0-iulogoenblackrgbvert.png" alt="">
+
+            </div>
+            </div>
+            <div class="inter_uni">
+            <h3>International universities</h3>
+            <div>
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/57034142-0-Duke.png" alt="">
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/58274332-0-deakin-u-logo.png" alt="">
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/58183192-0-logo-horizonal-green.png" alt="">
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/60378495-0-Emory-University-Log.png" alt="">
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/58277697-0-SSBM-logo-FINAL-08.png" alt="">
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/60515760-0-asu-logo-1.png" alt="">
+                <img class="icon_uni" src="https://v.fastcdn.co/u/f8c127f9/60515780-0-iulogoenblackrgbvert.png" alt="">
+
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="comp">
+        <h2 style="color: red; text-align: center; margin-top: 100px;">Trusted by leading companies around the globe</h2>
+    <div>
+        <div>
+            <div class="trust_img">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/60484815-0-1280px-Infosys-logo..png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/58181802-0-925855482s.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/58181782-0-Hewlett-Packard-Ente.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/58181762-0-gsk.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/58181767-0-mitra-sk.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/58181807-0-Cyient-logo.jpeg" alt="">
+            </div>
+            <div class="trust_img">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/60484805-0-tata-steel-logo-E553.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/57772466-0-wipro-primary-logo-c.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/60484870-0-1200px-HDFC-Life-Log.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/60484890-0-ITC-logo-490x100.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/60484945-0-5cd02fc7-9d3d-4a9d-a.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/58181797-0-icra-logo.jpeg" alt="">
+            </div>
+            <div class="trust_img">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/60486565-0-PricewaterhouseCoope.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/60486575-0-5847ebf8cef1014c0b5e.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/60486585-0-idJRDH8SB3.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/60486590-0-Kotak-Mahindra-Bank-.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/60500385-0-welspun-logo-BE5825E.png" alt="">
+                <img class="trust_icon" src="https://v.fastcdn.co/u/f8c127f9/60502450-0-fractal-logo.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div style="background-color: rgb(251,251,251); margin: 50px 5px;">
+        <h2 style="color: red; text-align: center; margin-top: 100px;">Spanning across industries</h2>
+        <div class="span_flex">
+            <div>
+                <img class="span_img" src="//v.fastcdn.co/u/f8c127f9/60501795-0-front-view-arrangeme.jpg" alt="">
+                <p class="span_text">Banking</p>
+            </div>
+            <div>
+                <img class="span_img" src="//v.fastcdn.co/u/f8c127f9/60501805-0-close-up-businesswom.jpg" alt="">
+                <p class="span_text">Financial Services</p>
+            </div>
+            <div>
+                <img class="span_img" src="//v.fastcdn.co/u/f8c127f9/60501890-0-insurance-benefits-p.jpg" alt="">
+                <p class="span_text">Insurance</p>
+            </div>
+            <div>
+                <img class="span_img" src="https://v.fastcdn.co/u/f8c127f9/60501945-0-hands-with-laptop-vi.jpg" alt="">
+                <p class="span_text">IT/ITES</p>
+            </div>
+            <div>
+                <img class="span_img" src="//v.fastcdn.co/u/f8c127f9/60501955-0-AdobeStock-271127258.jpeg" alt="">
+                <p class="span_text">Pharma and helthcare</p>
+            </div>
+        </div>
+        <div class="span_flex">
+            <div>
+                <img class="span_img" src="//v.fastcdn.co/u/f8c127f9/60501810-0-box-market-electroni.jpg" alt="">
+                <p class="span_text">Retail</p>
+            </div>
+            <div>
+                <img class="span_img" src="//v.fastcdn.co/u/f8c127f9/60502120-0-two-human-outlines-a.jpg" alt="">
+                <p class="span_text">Consulting</p>
+            </div>
+            <div>
+                <img class="span_img" src="//v.fastcdn.co/u/f8c127f9/60502215-0-young-woman-blogger-.jpg" alt="">
+                <p class="span_text">Media/Entertainment</p>
+            </div>
+            <div>
+                <img class="span_img" src="//v.fastcdn.co/u/f8c127f9/60502245-0-sun-setting-silhouet.jpg" alt="">
+                <p class="span_text">Energy utilities</p>
+            </div>
+            <div>
+                <img class="span_img" src="//v.fastcdn.co/u/f8c127f9/60502150-0-worker-operating-ind.jpg" alt="">
+                <p class="span_text">Manumfacturing</p>
+            </div>
+        </div>
+        <div id="new_offers">
+            <h2>New offerings</h2>
+            <div style="display: flex; justify-content: center;">
+                <div class="offers_new">
+                    <img class="img_award" src="https://v.fastcdn.co/u/f8c127f9/60516295-0-eduowkr.png" alt="">
+                    <p style="color: red; font-weight: bold;">Education@work</p>
+                    <p>Online</p>
+                    <p>Digital University</p>
+                
+                </div>
+                <div class="offers_new">
+                    <img class="img_award" src="https://v.fastcdn.co/u/f8c127f9/60516300-0-onborqad.png" alt="">
+                    <p style="color: red; font-weight: bold;">Onboaeding</p>
+                    <p>Fresher onboarding</p>
+                    <p>Program</p>
+                </div>
+                <div class="offers_new">
+                    <img class="img_award" src="https://v.fastcdn.co/u/f8c127f9/60516345-0-uplevel.png" alt="">
+                    <p style="color: red; font-weight: bold;">upLevel</p>
+                    <p>Stackable enterprise</p>
+                    <p>licensed Subscriptions</p>
+                </div>
+                <div class="offers_new">
+                    <img class="img_award" src="https://v.fastcdn.co/u/f8c127f9/60516305-0-wisdom.png" alt="">
+                    <p style="color: red; font-weight: bold;">WISDOM</p>
+                    <p>Wonen in science, Data, Organisations</p>
+                    <p>behaviour & Managment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="black_div">
+        <h1>Gift your team the skills they need</h1>
+        <p>Explore our most popular program bundles and help your people achieve their set goals.
+        </p>
+        <div style="padding-top: 20px;" class="contact">
+            Explore
+        </div>
+    </div>
+    <div style="text-align:center;">
+        <h1 style="color: red;">The upGrad for Business learning experience
+        </h1>
+        <img style="width: 98%; margin: auto;" src="https://v.fastcdn.co/u/f8c127f9/58190432-0-ICON-SET-01.png" alt="">
+    </div>
+    <br><br><br>
+    <div style="display: flex; justify-content: center;">
+        <div style="margin-top: 40px;" class="creati">
+            <p style="font-size: 30px; color: rgb(216,40,63); font-weight: bold; margin-top: 20px;">upGrad For Business in collaboration with SHRM India is thrilled to launch a white paper titled “FUTURE READY WORKFORCE: CUTTING EDGE LEARNING INITIATIVES AT PSEs”</p>
+            <div style="padding-top: 15px;" class="contact">Download</div>
+        </div>
+        <img class="creati" style="margin-top: -100px; width: 400px;" src="https://v.fastcdn.co/u/f8c127f9/60148060-0-LinkedIn-SHRM.jpg" alt="">
+    </div>
+    <div class="black_div">
+        <h1 style="color: red; font-size: 50px;">Stay updated in the world of work</h1>
+        <p style="width: 60%;margin: auto; padding: 20px;">From insightful events to gripping podcasts, know what’s happening in the world of work right here. This is where pioneers from Business, Ed-tech, L&D and more come together to shed light on important matters.
+        </p>
+        <div style="padding-top: 15px;" class="contact">
+            Explore Now
+        </div>
+    </div>
+    <div id="back_limg">
+<div id="last_sec" >
+    <div id="lets">Let's buils your solution</div>
+    <div id="form_flex">
+        <form action="">
+            <input value="" class="input_info" type="text" placeholder="First Name">
+            <input value="" type="text" class="input_info" placeholder="Last Name">
+            <input value="" type="number" class="input_info" placeholder="Mobile Number">
+            <input value="" type="text" class="input_info" placeholder="Bussiness Email">
+            <input value="" type="text" class="input_info" placeholder="Company">
+            <input value="" type="text" class="input_info" placeholder="Designation">
+            <select class="input_info" name="Domain" required>
+                <option value="">Domain</option>
+                <option value="">Data</option>
+                <option value="">Technology</option>
+                <option value="">Managment</option>
+                <option value="">Behavioral courses</option>
+            </select>
+            <b><p>Training for</p></b>
+            <div class="formcheck">
+            <input  class="checkbo" type="radio" placeholder="Self"><p>Self</p>
+        </div>
+        <div class="formcheck">
+            <input  class="checkbo" type="radio"><p>Team</p>
+        </div>
+            <div class="formcheck">
+            <input  class="checkbo" type="checkbox" placeholder=""><p> I agree to receive phone calls from upGrad counselors for program/course details</p>
+        </div>
+        <div class="formcheck">
+            <input class="checkbo" type="checkbox" placeholder=""><p> I agree to receive offers and promotions from upGrad</p>
+        </div>
+        <div onclick="show_alert()" class="contact" style="padding-top: 10px;">Request a callback</div>
+        </form>
+    </div>
+</div>
+</div >
+
+<div class="black_di">
+<div>
+  <img class="bussi_img"  src="https://v.fastcdn.co/u/f8c127f9/58216132-0-upgrad-for-business-.png" alt="">
+    <div>
+        <img class="social_img" src="data:image/jpeg;base64,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" alt="">  
+    
+    </div>
+    <p style="color: white;">Copyright © 2020. All rights reserved.</p>
+
+</div>
+<div id="fooler_ug">
+    <div>
+        <b>UPGRAD</b>
+        <p>About</p>
+        <p>career</p>
+        <p>upGrad Blog</p>
+        <p>Success Stories</p>
+    </div>
+    <div>
+        <b>SUPPORT</b>
+        <p>Terms and comditions</p>
+        <p>Privacy Policy</p>
+    </div>
+</div>
+<div>
+    <div class="app_links">
+      <a target="_blank" href="https://play.google.com/store/apps/details?id=com.upgrad.student&hl=en_IN&gl=US"> Get the Android app</a> 
+    </div>
+    <div class="app_links">
+        <a target="_blank" href="https://apps.apple.com/in/app/upgrad/id1191301447"> Get the IOS app</a>
+       
+    </div>
+
+</div>
+</div>
+</body>
+</html>
+<script>
+    function show_alert(){
+        alert("Thanks For Choosing upGrad");
+    }
+</script>
