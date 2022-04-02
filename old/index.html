@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- jquer cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</head>
+<body>
+    <div class="flex items-center relative mt-5 h-10 lg:w-9/12 m-auto z-10 ">
+        <img class="w-24 h-12 m-auto sm:m-0 logo" src="./images/upgrad_logo.svg"/>
+        <div class="dropdown ml-4 cursor-pointer hidden z-10 sm:block">
+        <button class="bg-red-700 p-2  text-white hover:bg-white  hover:text-red-600 border-gs-red border-2 w-28 rounded  gs-courses dropbtn">COURSES <span style="margin-left:5px;"><i class="fa-solid fa-caret-down"  id="arrow"></i></span></button>
+        <div class="dropdown-content bg-white shadow-md">
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Management`)">MBA & DBA(6) <span class="float-right text-2xl block -mt-1.5 ">></span></div>
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red"onmouseenter="showcourse(`DataScience`)">Data Science(7)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`MachineLearning`)">Machine Learning(6)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`BusinessAnalytics`)">Business Analitics(5)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Marketing`)">Marketing(3)<span class="float-right text-2xl block -mt-1.5 ">></span></div>    
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Software`)">Software(10)<span class="float-right text-2xl block -mt-1.5 ">></span></div>
+            <div class="w-60 h-14 p-4 font-semibold border-white rounded hover:bg-gray-100 border-l-4 hover:border-gs-red" onmouseenter="showcourse(`Blockchain`)">Block Chain(3)<span class="float-right text-2xl block -mt-1.5 ">></span></div> 
+            <div class="sidedropdown hidden absolute bg-white shadow-2xl" id="sidedropdown">
+        
+            </div>
+            </div>
+           
+        </div>
+        <div class="hidden lg:absolute mt-3 float-right sm:flex lg:right-32">
+            
+          
+            <div class="text-gray-600 m-2  lg:ml-7 cursor-pointer font-bold text-sm hover:text-gs-red hover:text-red-600" onclick="location.href='recruit.html'">HIRE FROM UPGRAD</div>
+            <div class="text-gray-600 m-2 lg:ml-7 cursor-pointer font-bold text-sm hover:text-gs-red hover:text-red-600" onclick="location.href='upGradAbroad.html'">STUDY ABROAD</div>
+            <div class="text-gray-600 m-2 lg:ml-7 cursor-pointer font-bold text-sm hover:text-gs-red hover:text-red-600" onclick="location.href='#'">FOR BUSINESS</div>
+            <div class="dropdown-more text-gray-600 m-2 lg:ml-7 cursor-pointer font-bold text-sm hover:text-gs-red hover:text-red-600" onclick="location.href='#'">MORE
+            <div class="moreshow bg-white rounded absolute hidden shadow-lg">
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Mentorships</div>
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Short Videos</div>
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Master Class</div>
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Refer and Earn</div>
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Blog</div>
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">Become A Business Associate</div>
+                <div class="h-8 p-2 text-gray-600 font-normal hover:text-gs-red">UpGrad Events</div>
+            </div>
+            </div>
+        </div>
+        <div>
+            <button class="p-2 rounded text-white absolute right-1 top-1 shadow-md bg-gradient-to-r from-red-700 to-red-300 hover:shadow-2xl" id="button1">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- --------navbar end ---------------------- -->
+    <div id="sign">
+       
+    <div id="signPage">
+        
+            <div>
+                <img src="./images/signup.png" alt="">
+            </div>
+   
+            <div id="form">
+             
+                <h1 class="text-3xl font-bold">Enter your mobile number to start learning
+                </h1>
+                <div class="flex item-center mt-10"> 
+                <label for="" class="flex"><img class="w-9" src="./images/Flag-India.webp" alt=""> <span class="text-xl font-semibold ml-4" > +91</span> </label>
+                <input type="text" placeholder="99999 99999" class="text-xl ml-7 border-0 outline-0" id="number">
+            </div>
+
+            <button class="w-full text-gray-600 border-2 text-2xl font-600 p-1 mt-5 pl-6 pr-6 bg-gray-100" onclick="getOtp()" >
+                Continue <i class="fa-solid fa-arrow-right-long"></i>
+            </button>   
+            <a href="" class="text-center mt-2 text-gray-400 underline font-bold">Proceed with Email</a>
+            </div> 
+        </div>
+
+    </div>   
+        <!-- --------------------signup page end  -->
+    <div id="banner" >
+    </div>
+
+<!-- ----------- banner section end - ---------- -->
+    <div class=" flex item-center status justify-around bg-gray-100 p-5 text-lg mb-10">
+        <div class="flex item-center">
+               <img class="w-14 h-10 object-cover mr-5" src="./images/gs_jobs.png" alt=""> <p class="text-xl font-semibold">Jobs in 1000+ </p> <span>Top Companies</span>
+        </div>
+        <div class="flex item-center">
+            <img  class="w-10 h-10 object-cover mr-5"src="./images/hikeimg.png" alt=""> <p class="text-xl font-semibold mr-3 " >50% </p> <span>Average Hike</span>
+
+        </div>
+        <div class="flex item-center">
+            <img class="w-10 h-10 object-cover mr-5"  src="./images/sinior.png" alt=""> <p class="text-xl font-semibold mr-3 ">Top 1%</p> <p>Global Universities</p>
+
+        </div>
+    </div>
+
+    <!-- -----------------stats end ------------------ -->
+    <span class="exploreBtn" >
+      <button  href=""class="text-xl font-medium text-center p-4 pl-6 pr-6 bg-red-600 text-white rounded-xl" onclick="location.href='#explore'"  >EXPLORE OUR COURSES</button>
+    </span>
+
+
+
+</body>
+</html>
+
+<script src="./script/index.js"></script>
+
