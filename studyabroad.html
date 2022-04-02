@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>studyabroad</title>
     <style>
+ 
         body{
             max-width: 1800px;
             margin: auto;
@@ -337,7 +338,7 @@ color: red;
          display:flex;
          position:relative;
          display:block;
-         width: 90%;
+         width: 100%;
          margin:auto;
      }
      
@@ -480,7 +481,7 @@ color: red;
     </div>
     <div class="slider-box">
         <div id="slider">
-            <img src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-1366,pr-true,q-80/home/images/ab-banner-cta-red-home1.jpg" alt="">
+            <img onclick="vediopop()" src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-1366,pr-true,q-80/home/images/ab-banner-cta-red-home1.jpg" alt="">
             <img src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-1366,pr-true,q-80/home/images/ab-banner-new-home2.jpg" alt="">
             <img src="https://ik.imagekit.io/upgrad1/abroad-images/tr:w-1366,pr-true,q-80/home/images/ab-banner-new-home3.jpg" alt="">
         </div>
@@ -493,7 +494,7 @@ color: red;
 
       <center>
       <div id="talkbutton">
-          <p id="talk_text">TALK TO OUT COUNSELOR</p>
+          <p onclick="fill_form()" id="talk_text">TALK TO OUT COUNSELOR</p>
       </div>
     </center>
     <br>
@@ -737,7 +738,7 @@ color: red;
 
 <p style="text-align: center; font-size: 10px; margin: 20px; ">By submitting this form, you agree to the <u>Terms of Use</u> and <u>Privacy Policy</u></p>
 <div class="level_submit">
-   <h3 style="padding-top: 13px;">SUBMIT</h3> 
+   <h3 onclick="showalert()" style="padding-top: 13px;">SUBMIT</h3> 
 </div>
 </div>
     </form>
@@ -774,7 +775,7 @@ color: red;
     <p><b>Watch recording of our previous webinars</b></p>
     <center>
     <div id="alum">
-        <img  class="alum_img" src="https://i.ytimg.com/vi_webp/8HTq0Rn6p38/hqdefault.webp" alt="">
+        <img   class="alum_img" src="https://i.ytimg.com/vi_webp/8HTq0Rn6p38/hqdefault.webp" alt="">
         <img  class="alum_img" src="https://i.ytimg.com/vi_webp/2PpEc9fd4c8/hqdefault.webp" alt="">
         <img  class="alum_img" src="https://i.ytimg.com/vi_webp/r_-LQtACMkg/hqdefault.webp" alt="">
     </div>
@@ -849,4 +850,14 @@ btn4.onclick = function () {
     btn4.classList.add('active');
 };
 
+ function showalert(){
+     alert("Your Counseling Session Is Booked")
+ }
+function fill_form(){
+    alert("Fill The Form Below")
+}
+ function vediopop(){
+                window.open(
+                    `https://youtu.be/cKKz0u9jqEU`);
+            }
 </script>
