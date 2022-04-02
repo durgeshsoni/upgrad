@@ -10,6 +10,17 @@
   height: 170vh;
 }
 
+.blackNav>a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 40px;
+
+}
+.blackNav{
+  /* /* margin-top: 10px; * */
+  padding-top: 10px;
+}
+
 .container{
   width: 900px;
   background-color:#fff;

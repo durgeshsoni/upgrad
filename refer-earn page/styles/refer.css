@@ -75,6 +75,7 @@
     
     
 }
+
 #signup:hover{
     box-shadow: 10px;
 }
@@ -326,6 +327,7 @@ font-weight: 600;
 #ref-earn{
 max-width: 1140px;
 margin: auto;
+margin-top: 20px;
 }
 
 video{
