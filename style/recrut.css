@@ -440,7 +440,7 @@ padding-top: 10px;
     grid-template-rows: repeat(5,1fr);
 }
 #grid-container>div{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 /* .....................................9................................. */
 #review{
