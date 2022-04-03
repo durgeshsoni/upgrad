@@ -456,6 +456,34 @@ padding-top: 10px;
     display: inline-block;
     padding-top: 50px;
 }
+#review-1{
+    height: 500px;
+    width: 80% ;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+#review-1>div{
+    height: 100%;
+    width: 30%;
+    margin: auto;
+    border: 1px solid rgb(118, 114, 114);
+}
+.round{
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+}
+.forSpan{
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+    display: inline-block;
+    padding-top: 30px;
+}
 /* ......................................10....................................... */
 #footer{
     height: 230px;
